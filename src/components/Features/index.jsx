@@ -1,5 +1,4 @@
-
-import { useContext } from "react";
+import { useContext, useRef, useEffect } from "react";
 import { WindowWidthContext } from "@/context/WindowWidthContext";
 import classNames from "classnames";
 import styles from "./styles.module.css";
@@ -15,14 +14,17 @@ import desktop from "@/assets/Desktop_features.png";
 import Link from "next/link";
 
 const Features = () => {
-
   const { isMobile } = useContext(WindowWidthContext);
+  const cardsRef = useRef(null);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+  const isDragging = useRef(false);
 
   const topics = [
     "Est et in pharetra magna adipiscing ornare aliquam.",
     "Tellus arcu sed consequat ac velit ut eu blandit.",
     "Ullamcorper ornare in et egestas dolor orci."
-  ]
+  ];
 
   const cards = [
     {
@@ -43,7 +45,54 @@ const Features = () => {
       description: "Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui.",
       color: "green",
     }
-  ]
+  ];
+
+  const handleMouseDown = (e) => {
+    if (cardsRef.current) {
+      isDragging.current = true;
+      startX.current = e.pageX - cardsRef.current.offsetLeft;
+      scrollLeft.current = cardsRef.current.scrollLeft;
+      cardsRef.current.style.cursor = 'grabbing'; // Opcional: mudar o cursor
+    }
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging.current || !cardsRef.current) return;
+    const x = e.pageX - cardsRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1; // Ajuste a sensibilidade conforme necessário
+    cardsRef.current.scrollLeft = scrollLeft.current - walk;
+  };
+
+  const handleMouseUp = () => {
+    isDragging.current = false;
+    if (cardsRef.current) {
+      cardsRef.current.style.cursor = 'grab'; // Opcional: reverter o cursor
+    }
+  };
+
+  const handleMouseLeave = () => {
+    isDragging.current = false;
+    if (cardsRef.current) {
+      cardsRef.current.style.cursor = 'grab'; // Opcional: reverter o cursor
+    }
+  };
+
+  useEffect(() => {
+    const cardsContainer = cardsRef.current;
+    if (cardsContainer) {
+      cardsContainer.addEventListener('mousedown', handleMouseDown);
+      cardsContainer.addEventListener('mousemove', handleMouseMove);
+      cardsContainer.addEventListener('mouseup', handleMouseUp);
+      cardsContainer.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        cardsContainer.removeEventListener('mousedown', handleMouseDown);
+        cardsContainer.removeEventListener('mousemove', handleMouseMove);
+        cardsContainer.removeEventListener('mouseup', handleMouseUp);
+        cardsContainer.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    }
+  }, []);
 
   return (
     <section className={styles.features} aria-label="Features">
@@ -84,8 +133,11 @@ const Features = () => {
       })}>
         <Bloob style={{ position: 'absolute', zIndex: -2, left: "-30%", bottom: "20%", width: '80%', height: '80%' }} />
         <Image className={styles.features_desktop} src={desktop} alt="desktop" width={600} height={391} />
-
-        <div className={styles.features_cards} draggable="true">
+        <div
+          ref={cardsRef}
+          className={styles.features_cards}
+          style={{ cursor: 'grab' }}
+        >
           {cards.map((card, index) => (
             <div key={index} className={styles.features_card}>
               <div className={styles.features_card_type_box}>
@@ -116,7 +168,7 @@ const Features = () => {
       </div>
 
     </section>
-  )
+  );
 };
 
 export default Features;
