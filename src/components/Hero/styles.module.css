@@ -1,0 +1,133 @@
+
+.hero {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 96px 16px 16px 16px;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_content {
+  width: calc(213.6px + 25.125vw);
+  height: auto;
+  min-height: 524px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* gap: 80px; */
+}
+
+.hero_title {
+  font-size: clamp(2.5rem, 1.7493rem + 3.0564vw, 4.5rem);
+  line-height: 110%;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero_title_trace { 
+  width: calc(73.845271255px + 7.92741165vw);
+  max-width: 190.5px;
+  min-width: 108px;
+  height: auto;
+  position: absolute;
+  top: clamp(1.875rem, 1.1712rem + 2.8653vw, 3.75rem);
+  left: 5px;
+  z-index: -1;
+}
+
+.hero_paragraph { 
+  width: 80%;
+  min-width: 294px;
+  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  line-height: 160%;
+  font-weight: 400;
+  font-family: Roboto;
+
+}
+
+.hero_btns { 
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.hero_btn {
+  width: 41%;
+  max-width: 239px;
+  min-width: 153px;
+  height: calc(41.9942706318px + 1.52817574vw);
+  border-radius: 8px;
+  background-color: var(--orange-600);
+  border: none;
+  font-size: clamp(1rem, 0.8123rem + 0.7641vw, 1.5rem);
+  font-weight: 700;
+  color: var(--background-white);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero_btn:hover {
+  scale: 0.95;
+  background-color: var(--background-white);
+  color: var(--blue-Gray-900);
+  border: 2px solid var(--blue-Gray-900);
+}
+
+.hero_demo {
+  width: calc(149.1174784062px + 2.00573066vw);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: clamp(1rem, 0.9062rem + 0.382vw, 1.25rem);
+  color: var(--blue-600);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero_demo:hover {
+  scale: 0.95;
+  opacity: 0.9;
+}
+
+.hero_companies {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.hero_companies_text {
+  width: auto;
+  min-width: 135px;
+  text-align: left;
+  color: var(--blue-Gray-600);
+  /* white-space: pre-line; */
+}
+
+.hero_companies_logos { 
+  /* width: 55%; */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.hero_image {
+  width: calc(199.542857152px + 29.51785714vw);
+  height: auto;
+}
