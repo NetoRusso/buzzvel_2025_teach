@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Menu from "@/components/Menu";
 import Hero from "@/components/Hero";
+import Features from "@/components/Features";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <Hero />
+        <Features />
       </main>
     </>
   );

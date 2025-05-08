@@ -4,8 +4,16 @@
   --background-white: #ffffff;
   --blue-Gray-900: #0F172A;
   --blue-Gray-600: #475569;
+  --blue-800: #1E40AF;
   --blue-600: #2563EB;
+  --blue-100: #DBEAFE;
   --orange-600: #EA580C;
+  --purple-800: #6B21A8;
+  --purple-100: #F3E8FF;
+  --Green-800: #166534;
+  --Green-100: #DCFCE7;
+
+
 }
 
 * {
