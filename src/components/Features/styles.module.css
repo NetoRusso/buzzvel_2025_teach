@@ -86,7 +86,7 @@
   width: clamp(7.8125rem, 7.4841rem + 1.3372vw, 8.6875rem);
   height: auto;
   position: absolute;
-  bottom: 0;
+  bottom: calc(202.54952603px - 13.371537727vw);
   left: 50%;
   transform: translate(-50%, 0);
   z-index: -1;
