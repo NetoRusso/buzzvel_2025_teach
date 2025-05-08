@@ -4,7 +4,7 @@
   max-width: 1440px;
   height: auto;
   min-height: 100vh;
-  padding: 96px 16px 32px 16px;
+  padding: 16px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
