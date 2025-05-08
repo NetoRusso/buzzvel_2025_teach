@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import classNames from "classnames";
 
-import Logo from "@/assets/Logo-colored.svg";
-import arrow from "@/assets/arrow_down.svg";
-import arrowLeft from "@/assets/arrow_left.svg";
+import Logo from "@/assets/SVG/Logo-colored.svg";
+import arrow from "@/assets/SVG/arrow_down.svg";
+import arrowLeft from "@/assets/SVG/arrow_left.svg";
 import { WindowWidthContext } from "@/context/WindowWidthContext";
 
 
