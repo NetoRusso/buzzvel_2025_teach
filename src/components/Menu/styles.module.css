@@ -95,17 +95,16 @@
   position: relative;
 }
 
-/* Estilo padrão do dropdown (escondido) */
 .menu_desktop_nav_list_item_link_dropdown {
-  display: block; /* Alterado de none para block */
+  display: block; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
   width: 160px;
-  height: 0; /* Começa com altura 0 */
-  opacity: 0; /* Começa invisível */
-  padding: 0 16px; /* Começa sem padding */
+  height: 0; 
+  opacity: 0; 
+  padding: 0 16px; 
   overflow: hidden;
   background-color: var(--background-white);
   border-radius: 8px;
@@ -113,17 +112,15 @@
   top: 48px;
   right: 50%;
   transform: translateX(50%);
-  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out; /* Adicionada transição para padding */
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out; 
 }
 
-/* Estilo do dropdown quando ativo (aberto) */
 .menu_desktop_nav_list_item_link_dropdown.active {
-  height: 228px; /* Altura total */
+  height: 228px; 
   opacity: 1;
-  padding: 24px 16px; /* Padding total */
+  padding: 24px 16px; 
 }
 
-/* Estilo do dropdown quando o mouse está sobre o item */
 .menu_desktop_nav_list_item_dropdown:hover > .menu_desktop_nav_list_item_link_dropdown {
   height: 228px;
   opacity: 1;
@@ -195,6 +192,7 @@
 .menu_mobile_box {
   width: 100vw;
   height: 60vh;
+  min-height: 400px;
   position: fixed;
   top: 0;
   left: 0;
@@ -261,6 +259,7 @@
 .menu_mobile_dropdown {
   width: 50vw;
   height: 50vh;
+  min-height: 400px;
   position: fixed;
   top: 0;
   left: 0;
