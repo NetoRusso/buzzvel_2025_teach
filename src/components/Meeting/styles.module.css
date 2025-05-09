@@ -39,9 +39,7 @@
   object-fit: cover cover;
   object-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0px 0px 4px 0px #00000012,
-              0px 4px 6px -1px #0000001A;
-  transition: grid-area 0.3s ease-in-out; /* Adiciona transição para a animação */
+  transition: grid-area 0.3s ease-in-out; 
 }
 
 .content_photo_1 {
@@ -100,6 +98,7 @@
 
 .focused {
   z-index: 1; 
+  box-shadow: 0px 0px 4px 0px #00000012;
 }
 
 .focused.content_photo_1 {

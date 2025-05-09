@@ -43,8 +43,8 @@ const Meeting = () => {
             src={photo_1}
             alt="photo_1"
             style={{
-              transform: focusedPhoto === 'content_photo_1' ? 'scale(1.05)' : 'scale(0.95)',
-              opacity: focusedPhoto === 'content_photo_1' ? 1 : 0.8,
+              transform: focusedPhoto === 'content_photo_1' ? 'scale(1.1)' : 'scale(0.95)',
+              opacity: focusedPhoto === 'content_photo_1' ? 1 : 0.95,
               transition: 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out',
               zIndex: focusedPhoto === 'content_photo_1' ? 1 : 0,
             }}
