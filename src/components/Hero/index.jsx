@@ -30,7 +30,7 @@ const Hero = () => {
       })}>
         <h1 className={styles.hero_title}>
           Teach students worldwide
-          <Image className={styles.hero_title_trace} src={trace} alt="Trace" width={191} height={13} />
+          <Image className={styles.hero_title_trace} src={trace} alt="Trace" width={191} height={13} loading="lazy" />
         </h1>
         <p className={styles.hero_paragraph}>
           Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.
@@ -40,18 +40,18 @@ const Hero = () => {
             Sign Up Now
           </button>
           <Link href="#" className={styles.hero_demo}>
-            <Image className={styles.hero_demo_play} src={play} alt="Play" width={24} height={24} />
+            <Image className={styles.hero_demo_play} src={play} alt="Play" width={24} height={24} loading="lazy"/>
             View Demo
           </Link>
         </div>
         <div className={styles.hero_companies}>
           {isMobile ? (<p className={styles.hero_companies_text}>Trusted by leading companies</p>):(<p className={styles.hero_companies_text}>Trusted by<br />leading companies</p>)}
           <div className={styles.hero_companies_logos}>
-            <Image className={styles.companies_logo_img} src={companies01} alt="companies01" width={32} height={32} />
-            <Image className={styles.companies_logo_img} src={companies02} alt="companies02" width={32} height={32} />
-            <Image className={styles.companies_logo_img} src={companies03} alt="companies03" width={32} height={32} />
-            <Image className={styles.companies_logo_img} src={companies04} alt="companies04" width={32} height={32} />
-            <Image className={styles.companies_logo_img} src={companies05} alt="companies05" width={32} height={32} />
+            <Image className={styles.companies_logo_img} src={companies01} alt="companies01" width={32} height={32} loading="lazy"/>
+            <Image className={styles.companies_logo_img} src={companies02} alt="companies02" width={32} height={32} loading="lazy"/>
+            <Image className={styles.companies_logo_img} src={companies03} alt="companies03" width={32} height={32} loading="lazy"/>
+            <Image className={styles.companies_logo_img} src={companies04} alt="companies04" width={32} height={32} loading="lazy"/>
+            <Image className={styles.companies_logo_img} src={companies05} alt="companies05" width={32} height={32} loading="lazy"/>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@ const Hero = () => {
         [styles.hero_content]: true,
         [styles.hero_content_2]: true,
       })}>
-        <Image className={styles.hero_image} src={image_hero} alt="image_hero" width={625} height={545} />
+        <Image className={styles.hero_image} src={image_hero} alt="image_hero" width={625} height={545} loading="lazy" />
       </div>
     </section>
   )
