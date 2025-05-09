@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import QuotoCard from "@/components/QuotoCard";
 import Meeting from "@/components/Meeting";
+import Count from "@/components/Count";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <Features />
         <QuotoCard />
         <Meeting />
+        <Count />
       </main>
     </>
   );
