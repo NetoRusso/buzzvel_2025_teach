@@ -13,7 +13,6 @@
   max-width: 1440px;
   height: auto;
   display: flex;
-  /* flex-flow: row wrap; */
   flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: space-around;
@@ -165,7 +164,6 @@
   height: auto;
   position: absolute;
   top: calc(-32px + (-20) * (100vw - 393px) / 1047);
-  /* left: calc(59% + (-56 - 59) * (100vw - 393px) / 1047); */
   left: 59%;
 }
 
@@ -185,5 +183,10 @@
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
+  transition: all 0.3s ease-in-out;
+}
 
+.content_link:hover {
+  scale: 0.95;
+  opacity: 0.9;
 }
