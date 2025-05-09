@@ -120,6 +120,17 @@
   48px 0 0 0 var(--background-white);
 }
 
+.dots::after {
+  content: '';
+  width: 32px;
+  height: 8px;
+  background-color: var(--blue-Gray-900);
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .box_2 {
   width: 50%;
   min-width: 300px;
