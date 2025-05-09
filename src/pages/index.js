@@ -4,6 +4,7 @@ import Menu from "@/components/Menu";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import QuotoCard from "@/components/QuotoCard";
+import Meeting from "@/components/Meeting";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <Hero />
         <Features />
         <QuotoCard />
+        <Meeting />
       </main>
     </>
   );
