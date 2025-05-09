@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import Menu from "@/components/Menu";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import QuotoCard from "@/components/QuotoCard";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
         <Features />
+        <QuotoCard />
       </main>
     </>
   );
