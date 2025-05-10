@@ -1,4 +1,3 @@
-
 .hero {
   width: 100%;
   max-width: 1440px;
@@ -38,7 +37,7 @@
   position: relative;
 }
 
-.hero_title_trace { 
+.hero_title_trace {
   width: calc(73.845271255px + 7.92741165vw);
   max-width: 190.5px;
   min-width: 108px;
@@ -49,15 +48,16 @@
   z-index: -1;
 }
 
-.hero_paragraph { 
-  width: 80%;
+.hero_paragraph {
+  width: 100%;
+  max-width: 575px;
   min-width: 294px;
-  font-size: clamp(1rem, 1rem + 0vw, 1rem);
+  font-size: clamp(1rem, 0.8123rem + 0.7641vw, 1.5rem);
   line-height: 160%;
   font-weight: 400;
 }
 
-.hero_btns { 
+.hero_btns {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -122,7 +122,7 @@
   color: var(--blue-Gray-600);
 }
 
-.hero_companies_logos { 
+.hero_companies_logos {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
