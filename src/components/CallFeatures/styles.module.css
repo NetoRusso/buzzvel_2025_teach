@@ -1,5 +1,4 @@
-
-.container { 
+.container {
   width: 100%;
   height: auto;
   min-height: 60vh;
@@ -15,5 +14,228 @@
   height: auto;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.texts_box {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
   justify-content: center;
+  gap: 32px;
+  padding: 16px;
+}
+
+.texts_title {
+  width: auto;
+  font-size: clamp(1.5rem, 0.7493rem + 3.0564vw, 3.5rem);
+  line-height: 110%;
+  font-weight: 800;
+  color: var(--blue-Gray-900);
+  position: relative;
+}
+
+.texts_trace {
+  width: clamp(65px, 65px + 9.0279vw, 205px);
+  max-width: 205px;
+  min-width: 75px;
+  height: auto;
+  position: absolute;
+  top: clamp(1rem, 0.4286rem + 2.8571vw, 3rem);
+  right: 0;
+  z-index: -1;
+}
+
+.texts_paragraph {
+  font-size: clamp(1rem, 0.9062rem + 0.382vw, 1.25rem);
+  line-height: 140%;
+  font-weight: 400;
+  color: var(--blue-Gray-900);
+}
+
+.texts_link {
+  font-size: clamp(1rem, 0.9062rem + 0.382vw, 1.25rem);
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--blue-600);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.texts_link:hover {
+  scale: 0.95;
+  opacity: 0.9;
+}
+
+.grid_box {
+  width: clamp(300px, 300px + 20.8335vw, 600px);
+  height: auto;
+  min-height: 480px;
+  position: relative;
+}
+
+.grid_box_content {
+  width: 100%;
+  height: 479px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.s_1, .s_2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.s_2  {
+  align-items: flex-start;
+}
+
+.card {
+  width: 225px;
+  height: 232px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: var(--background-white);
+  box-shadow: 0px 0px 10px 0px #00000012, 0px 10px 15px -3px #0000001A;
+  grid-area: 1 / 1 / 7 / 4;
+}
+
+.card_type {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  color: var(--blue-800);
+  width: 65px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: var(--blue-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_title {
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 500;
+}
+
+.card_description {
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--blue-Gray-600);
+  font-weight: 400;
+}
+
+.card_btn {
+  width: 193px;
+  height: 40px;
+  border: 2px solid var(--blue-600);
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--blue-600);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card_btn:hover {
+  scale: 0.95;
+  background-color: var(--orange-600);
+  color: var(--background-white);
+  border: none;
+}
+
+.box_1 {
+  width: clamp(10.125rem, 9.562rem + 2.2923vw, 11.625rem);
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.box_1_photo {
+  width: 100%;
+  max-width: 186px;
+  min-width: 75px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box_1_photo_b {
+  /* width: clamp(3.125rem, 2.4212rem + 2.8653vw, 5rem); */
+  width: 100%;
+  max-width: 80px;
+  min-width: 24px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(30%, -50%);
+  z-index: 2;
+}
+
+.box_2 {
+  /* width: clamp(4.6875rem, 2.375rem + 10.2778vw, 11.625rem); */
+  width: 100%;
+  max-width: 305px;
+  min-width: 75px;
+  height: auto;
+  grid-area: 7 / 1 / 11 / 6;
+}
+
+.box_2_photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box_3 {
+  /* width: clamp(10rem, 6.9792rem + 13.4259vw, 19.0625rem); */
+  width: 100%;
+  max-width: 232px;
+  min-width: 160px;
+  height: auto;
+  grid-area: 7 / 7 / 11 / 11;
+
+}
+
+.box_3_photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 960px) {
+  .content {
+    padding: 16px;
+    flex-direction: column;
+
+  }
 }
