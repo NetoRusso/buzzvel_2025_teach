@@ -9,7 +9,7 @@ import trace from "@/assets/SVG/trace.svg";
 import check from "@/assets/SVG/check.svg";
 import detail from "@/assets/SVG/points_features.svg";
 import arrow from "@/assets/SVG/arrow_right.svg";
-import Bloob from "../Bloob";
+import Blob from "../Blob";
 import desktop from "@/assets/Desktop_features.png";
 import Link from "next/link";
 
@@ -52,28 +52,28 @@ const Features = () => {
       isDragging.current = true;
       startX.current = e.pageX - cardsRef.current.offsetLeft;
       scrollLeft.current = cardsRef.current.scrollLeft;
-      cardsRef.current.style.cursor = 'grabbing'; 
+      cardsRef.current.style.cursor = 'grabbing';
     }
   };
 
   const handleMouseMove = (e) => {
     if (!isDragging.current || !cardsRef.current) return;
     const x = e.pageX - cardsRef.current.offsetLeft;
-    const walk = (x - startX.current) * 1; 
+    const walk = (x - startX.current) * 1;
     cardsRef.current.scrollLeft = scrollLeft.current - walk;
   };
 
   const handleMouseUp = () => {
     isDragging.current = false;
     if (cardsRef.current) {
-      cardsRef.current.style.cursor = 'grab'; 
+      cardsRef.current.style.cursor = 'grab';
     }
   };
 
   const handleMouseLeave = () => {
     isDragging.current = false;
     if (cardsRef.current) {
-      cardsRef.current.style.cursor = 'grab'; 
+      cardsRef.current.style.cursor = 'grab';
     }
   };
 
@@ -102,7 +102,7 @@ const Features = () => {
       })}>
         <h2 className={styles.features_title}>
           An all-in-one app that makes it easier
-          <Image className={styles.features_title_trace} src={trace} alt="Trace" width={246} height={12} loading="lazy"/>
+          <Image className={styles.features_title_trace} src={trace} alt="Trace" width={246} height={12} loading="lazy" />
         </h2>
         {isMobile && (
           <p className={styles.features_paragraph}>
@@ -113,14 +113,14 @@ const Features = () => {
         <ul className={styles.features_list}>
           {topics.map((topic, index) => (
             <li key={index} className={styles.features_list_item}>
-              <Image className={styles.features_list_item_check} src={check} alt="check" width={13.32} height={9.07} loading="lazy"/>
+              <Image className={styles.features_list_item_check} src={check} alt="check" width={13.32} height={9.07} loading="lazy" />
               <p className={styles.features_list_item_text}>{topic}</p>
             </li>
           ))}
         </ul>
         <Link href="#" className={styles.features_link}>
           Find more about the app
-          <Image className={styles.features_link_arrow} src={arrow} alt="arrow" width={14} height={13.31} loading="lazy"/>
+          <Image className={styles.features_link_arrow} src={arrow} alt="arrow" width={14} height={13.31} loading="lazy" />
         </Link>
       </div>
 
@@ -131,7 +131,18 @@ const Features = () => {
         [styles.features_content]: true,
         [styles.features_content_2]: true,
       })}>
-        <Bloob style={{ position: 'absolute', zIndex: -2, left: "-30%", bottom: "20%", width: '80%', height: '80%' }} loading="lazy" />
+        <Blob
+          style={{
+            position: 'absolute',
+            zIndex: -2,
+            left: "25%",
+            top: "65%",
+            width: '100vw',
+            height: 'auto',
+            maxWidth: '506px',
+            minWidth: "397px",
+            transform: 'translate(-50%, -50%)',
+          }} loading="lazy" />
         <Image className={styles.features_desktop} src={desktop} alt="desktop" width={600} height={391} loading="lazy" />
         <div
           ref={cardsRef}
