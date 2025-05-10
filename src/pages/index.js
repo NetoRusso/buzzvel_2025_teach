@@ -7,6 +7,8 @@ import QuotoCard from "@/components/QuotoCard";
 import Meeting from "@/components/Meeting";
 import Count from "@/components/Count";
 import SocialProof from "@/components/SocialProof";
+import CallFeatures from "@/components/CallFeatures";
+
 
 
 export default function Home() {
@@ -29,6 +31,7 @@ export default function Home() {
         <Meeting />
         <Count />
         <SocialProof />
+        <CallFeatures />
       </main>
     </>
   );
