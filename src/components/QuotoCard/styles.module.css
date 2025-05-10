@@ -1,4 +1,3 @@
-
 .container {
   width: 100%;
   height: auto;
@@ -7,8 +6,14 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 64px;
+  /* padding-bottom: 64px; */
   overflow-y: clip;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding-bottom: 96px;
+  }
 }
 
 .content { 
