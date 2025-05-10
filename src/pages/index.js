@@ -6,6 +6,7 @@ import Features from "@/components/Features";
 import QuotoCard from "@/components/QuotoCard";
 import Meeting from "@/components/Meeting";
 import Count from "@/components/Count";
+import SocialProof from "@/components/SocialProof";
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <QuotoCard />
         <Meeting />
         <Count />
+        <SocialProof />
       </main>
     </>
   );
