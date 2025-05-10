@@ -9,7 +9,6 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  /* gap: clamp(2.5rem, 1.5616rem + 3.8204vw, 5rem); */
   gap: 40px;
   margin: 0 auto;
 }
@@ -24,7 +23,12 @@
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  /* gap: 80px; */
+}
+
+@media screen and (max-width: 1030px) {
+  .hero_content_1 {
+    margin-top: 96px;
+  }
 }
 
 .hero_title {
@@ -51,8 +55,6 @@
   font-size: clamp(1rem, 1rem + 0vw, 1rem);
   line-height: 160%;
   font-weight: 400;
-  font-family: Roboto;
-
 }
 
 .hero_btns { 

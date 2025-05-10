@@ -1,9 +1,8 @@
-
 'use client';
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { motion, useAnimationFrame } from 'framer-motion';
 import * as flubber from 'flubber';
-
+import { useInView } from 'react-intersection-observer';
 
 const paths = [
   "M307.44,77.84c-14.03,74.3-44.79,81.86,17.59,144.24C542.13,439.18,0,514.97,0,251.07,0,4.94,336.32-75.08,307.44,77.84Z",
@@ -19,19 +18,35 @@ const paths = [
 const Blob = ({ fill = "#FB923C", style }) => {
   const [d, setD] = useState(paths[0]);
   const [hover, setHover] = useState(false);
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+
+  const { ref: viewRef, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: '300px 0px',
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setShouldAnimate(true);
+    }
+  }, [inView]);
 
   const interpolators = useMemo(() => {
+    if (!shouldAnimate) return [];
+
     const result = [];
     for (let i = 0; i < paths.length; i++) {
       const next = (i + 1) % paths.length;
-      result.push(flubber.interpolate(paths[i], paths[next], { maxSegmentLength: 2 }));
+      result.push(flubber.interpolate(paths[i], paths[next], { maxSegmentLength: 5 }));
     }
     return result;
-  }, []);
+  }, [shouldAnimate]); 
 
   useAnimationFrame((t) => {
+    if (!shouldAnimate || interpolators.length === 0) return;
+
     const total = interpolators.length;
-    const loopTime = 10000;
+    const loopTime = 10000; // 10 segundos por ciclo
     const progress = (t % loopTime) / loopTime;
     const index = Math.floor(progress * total);
     const localT = (progress * total) - index;
@@ -41,6 +56,7 @@ const Blob = ({ fill = "#FB923C", style }) => {
 
   return (
     <svg
+      ref={viewRef} 
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
       height="100%"
@@ -48,17 +64,21 @@ const Blob = ({ fill = "#FB923C", style }) => {
       fill="none"
       style={style}
     >
-      <motion.path
-        fill={fill}
-        d={d}
-        animate={{ scale: hover ? 0.8 : 0.9 }}
-        transition={{ duration: 0.4, ease: 'easeInOut' }}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      />
+      {shouldAnimate ? (
+        <motion.path
+          fill={fill}
+          d={d}
+          animate={{ scale: hover ? 0.8 : 0.9 }}
+          transition={{ type: "spring", stiffness: 100, damping: 10 }}
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+        />
+      ) : (
+
+        <path fill={fill} d={paths[0]} style={{transform: 'scale(0.9)'}} />
+      )}
     </svg>
   );
 };
 
 export default Blob;
-

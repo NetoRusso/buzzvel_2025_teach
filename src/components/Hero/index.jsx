@@ -18,6 +18,9 @@ import companies05 from "@/assets/SVG/companies05.svg";
 
 
 
+
+
+
 const Hero = () => {
 
   const { isMobile } = useContext(WindowWidthContext);
@@ -60,7 +63,7 @@ const Hero = () => {
         [styles.hero_content]: true,
         [styles.hero_content_2]: true,
       })}>
-        <Image className={styles.hero_image} src={image_hero} alt="image_hero" width={625} height={545} loading="lazy" />
+        <Image className={styles.hero_image} src={image_hero} alt="image_hero" width={625} height={545} priority={true}/>
       </div>
     </section>
   )
