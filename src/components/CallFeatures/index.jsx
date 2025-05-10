@@ -3,23 +3,30 @@
 import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import Blob from "../Blob";
 
 import trace from "@/assets/SVG/trace.svg";
 import arrow from "@/assets/SVG/arrow_right.svg";
-
 import picture01 from "@/assets/picture_features_1.png";
 import picture01b from "@/assets/picture_features_1b.png";
 import picture02 from "@/assets/picture_features_2.png";
 import picture03 from "@/assets/picture_features_3.png";
 
+import dynamic from 'next/dynamic';
+import { useInView } from 'react-intersection-observer';
+
+const DynamicBlob = dynamic(() => import('../Blob'), {
+  ssr: false,
+});
 
 const CallFeatures = () => {
+  // Hook useInView para a seção que contém o Blob
+  const { ref: blobSectionRef, inView: blobSectionIsVisible } = useInView({
+    triggerOnce: true,
+    rootMargin: '100px 0px',// Ajuste conforme necessário
+  });
 
   return (
     <section className={styles.container} aria-label="Call Action more Features">
-
-
       <div className={styles.content}>
         <div className={styles.texts_box}>
           <h2 className={styles.texts_title}>
@@ -35,9 +42,8 @@ const CallFeatures = () => {
           </Link>
         </div>
 
-        <div className={styles.grid_box}>
+        <div ref={blobSectionRef} className={styles.grid_box}>
           <div className={styles.grid_box_content}>
-
             <div className={styles.s_1}>
               <div className={styles.card}>
                 <span className={styles.card_type}>Popular</span>
@@ -64,18 +70,22 @@ const CallFeatures = () => {
                 <Image src={picture03} alt="picture03" width={232} height={179} loading="lazy" className={styles.box_3_photo} />
               </div>
             </div>
-
           </div>
 
-          <Blob style={{
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            zIndex: -1,
-            left: "50%",
-            top: "50%",
-            transform: "translate(-50%, -50%)",
-          }} />
+          {blobSectionIsVisible && (
+            <DynamicBlob
+              fill="#FB923C" 
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "absolute",
+                zIndex: -1, 
+                left: "50%",
+                top: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            />
+          )}
         </div>
       </div>
     </section>

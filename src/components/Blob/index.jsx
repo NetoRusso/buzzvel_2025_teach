@@ -22,7 +22,7 @@ const Blob = ({ fill = "#FB923C", style }) => {
 
   const { ref: viewRef, inView } = useInView({
     triggerOnce: true,
-    rootMargin: '300px 0px',
+    rootMargin: '50px 0px',
   });
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Blob = ({ fill = "#FB923C", style }) => {
     const result = [];
     for (let i = 0; i < paths.length; i++) {
       const next = (i + 1) % paths.length;
-      result.push(flubber.interpolate(paths[i], paths[next], { maxSegmentLength: 5 }));
+      result.push(flubber.interpolate(paths[i], paths[next], { maxSegmentLength: 20 }));
     }
     return result;
   }, [shouldAnimate]); 
