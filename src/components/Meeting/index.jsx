@@ -182,8 +182,10 @@ const Meeting = () => {
         </div>
         <div className={styles.content_text}>
           <h2 className={styles.content_text_title}>
-            <Image src={plane} alt="plane" width={64} height={64} loading="lazy" className={styles.plane} />
-            Meet international students & teachers
+            
+            Meet <span>international
+              <Image src={plane} alt="plane" width={64} height={64} loading="lazy" className={styles.plane} /></span> 
+              students & teachers
           </h2>
           <p className={styles.content_text_paragraph}>
             Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.
