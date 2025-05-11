@@ -168,9 +168,8 @@
   width: calc(24px + (64 - 24) * (100vw - 393px) / (1440 - 393));
   height: auto;
   position: absolute;
-  /* top: -70%; */
-  top: -64px;
-  left: 72%;
+  top: -80%;
+  left: 70%;
   z-index: -1;
 }
 
