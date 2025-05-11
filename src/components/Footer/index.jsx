@@ -2,7 +2,7 @@
 import styles from "./styles.module.css";
 import Image from "next/image";
 
-import logo from "../../assets/SVG/logo-white.svg";
+import logo from "@/assets/SVG/Logo-white.svg";
 import arrow from "@/assets/SVG/arrow_right_white.svg";
 import wolrd from "@/assets/SVG/world.svg";
 import euro from "@/assets/SVG/euro.svg";
