@@ -10,6 +10,7 @@ import SocialProof from "@/components/SocialProof";
 import CallFeatures from "@/components/CallFeatures";
 import Join from "@/components/Join";
 import Request from "@/components/Request";
+import Footer from "@/components/Footer";
 
 
 
@@ -37,6 +38,7 @@ export default function Home() {
         <Join />
         <Request />
       </main>
+      <Footer />
     </>
   );
 }
