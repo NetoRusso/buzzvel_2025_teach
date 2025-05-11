@@ -8,6 +8,8 @@ import Meeting from "@/components/Meeting";
 import Count from "@/components/Count";
 import SocialProof from "@/components/SocialProof";
 import CallFeatures from "@/components/CallFeatures";
+import Join from "@/components/Join";
+import Request from "@/components/Request";
 
 
 
@@ -32,6 +34,8 @@ export default function Home() {
         <Count />
         <SocialProof />
         <CallFeatures />
+        <Join />
+        <Request />
       </main>
     </>
   );

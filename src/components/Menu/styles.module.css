@@ -69,13 +69,13 @@
 .menu_desktop_acess_button {
   width: 153px;
   height: 48px;
-  background-color: var(--background-white);
+  /* background-color: var(--background-white); */
+  background-color: transparent;
   border: 2px solid var(--blue-Gray-900);
   border-radius: 8px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--blue-Gray-900);
-  font-family: "Roboto", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
