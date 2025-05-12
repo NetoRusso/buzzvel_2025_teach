@@ -57,8 +57,9 @@ O projeto consiste em uma landing page single-page composta por várias seções
     *   Links para "Log In" e botão "Sign Up Now".
     *   Logo clicável que rola a página para o topo.
 
-![Image](https://github.com/user-attachments/assets/dd173ee2-87e4-4739-aad6-d54714d14ef3)
-![Image](https://github.com/user-attachments/assets/fc1af95e-cdd6-46f8-a17d-6bd33a0c016d)
+<img src="https://github.com/user-attachments/assets/c8bff71e-c1ad-4394-b008-c3db3cb56648" width="700" />
+<img src="https://github.com/user-attachments/assets/46940a0a-9095-49a1-a553-19d3a864af88" width="200" />
+
 
 2.  **Hero (`@/components/Hero`):**
     *   Seção principal de boas-vindas.
@@ -67,7 +68,8 @@ O projeto consiste em uma landing page single-page composta por várias seções
     *   Imagem principal otimizada com `next/image` e `priority={true}`.
     *   Seção "Trusted by" com logos de empresas, adaptando a quebra de linha do texto para mobile.
 
-![Image](https://github.com/user-attachments/assets/66825ef3-21c2-402e-b7e2-dce2bedd20d4)
+<img src="https://github.com/user-attachments/assets/7f6e63db-32a0-4563-9940-4a99bea6acf2" width="700" />
+<img src="https://github.com/user-attachments/assets/6c3348dd-df9e-4843-9d20-a2af2b0bf4e4" width="200" />
 
 3.  **Features (`@/components/Features`):**
     *   Seção destacando funcionalidades do app "all-in-one".
@@ -75,26 +77,33 @@ O projeto consiste em uma landing page single-page composta por várias seções
     *   Lista de tópicos, imagem de um desktop.
     *   Carrossel horizontal de cards de features com funcionalidade de "arrastar para rolar" (mouse).
     *   Elemento `Blob` animado no fundo, carregado dinamicamente.
-![Image](https://github.com/user-attachments/assets/3f4805f8-d5fd-4f2d-9d41-36592a032c21)
+
+<img src="https://github.com/user-attachments/assets/146f83ea-f76d-4046-8a43-18ec1f0e9c6a" width="700" />
+<img src="https://github.com/user-attachments/assets/8cf24364-a563-4ca1-8e8f-69c41f074b5d" width="200" />
 
 4.  **QuotoCard (`@/components/QuotoCard`):**
     *   Renderiza um card de citação/depoimento com design elaborado.
     *   Inclui texto, autor, imagem e elementos decorativos.
     *   Possui elementos visuais (setas, dots) que sugerem uma funcionalidade de slider, porém, a lógica de navegação do slider não foi implementada neste componente isolado. A seção "SocialProof" implementa o carrossel de depoimentos.
-![Image](https://github.com/user-attachments/assets/838b582e-bbdd-4182-a978-386bad39ec5c)
+
+<img src="https://github.com/user-attachments/assets/5cd32cf8-89d4-4ab8-a1bf-1b641945be12" width="700" />
+<img src="https://github.com/user-attachments/assets/1288ff94-db58-408a-9e1e-561d0fbbaf94" width="200" />
+
 
 5.  **Meeting (`@/components/Meeting`):**
     *   Seção com um grid de 10 fotos e um bloco de texto.
     *   Implementa um efeito visual onde, a cada intervalo de tempo, uma foto aleatória no grid recebe "foco" (escala, opacidade e z-index aumentados) através de animação CSS controlada por JavaScript.
 
-![Image](https://github.com/user-attachments/assets/8850faaa-b3a3-4934-9bc9-e30bd0f2b6c5)
+<img src="https://github.com/user-attachments/assets/a1747406-bdde-4e64-ad28-d0ff58ced7bb" width="700" />
+<img src="https://github.com/user-attachments/assets/91d4eac2-119f-4760-9af7-5c82f24319e3" width="200" />
 
 6.  **Count (`@/components/Count`):**
     *   Seção com estatísticas numéricas (países, professores, estudantes).
     *   Os números são animados utilizando o componente `AnimateCounter` quando a seção entra na viewport.
     *   Utiliza a função `formatNumber` para exibir números grandes com sufixo "M".
 
-![Image](https://github.com/user-attachments/assets/31122181-5e7c-431e-89b4-1cb9b61d1fd2)
+<img src="https://github.com/user-attachments/assets/b9f82a10-04a9-44fa-a304-37b09131677a" width="700" />
+<img src="https://github.com/user-attachments/assets/c1a8376b-4d2b-4b41-8a20-a81f1d98eff8" width="200" />
 
 7.  **SocialProof (`@/components/SocialProof`):**
     *   Carrossel de depoimentos ("What everyone says").
@@ -103,14 +112,16 @@ O projeto consiste em uma landing page single-page composta por várias seções
     *   Funcionalidade de "arrastar para rolar" (mouse) em todas as visualizações.
     *   Layout responsivo, escondendo botões de navegação em mobile.
 
-![Image](https://github.com/user-attachments/assets/0381f0ab-7d96-43a1-a3fd-6e95401f4a48)
+<img src="https://github.com/user-attachments/assets/078f0b74-d466-45c8-a86f-aeb8426afa5a" width="700" />
+<img src="https://github.com/user-attachments/assets/7dcf7838-0254-4c77-9ad1-9a309df5cd1a" width="200" />
 
 8.  **CallFeatures (`@/components/CallFeatures`):**
     *   Seção de call-to-action para mais funcionalidades.
     *   Layout com texto, link e um grid de cards e imagens.
     *   Elemento `Blob` animado no fundo, carregado dinamicamente quando a seção entra na view.
 
-![Image](https://github.com/user-attachments/assets/f26b61a5-53b9-4330-9e4d-3e2a098628d2)
+<img src="https://github.com/user-attachments/assets/c8546a75-f51d-4920-8caf-bb2cd45a3040" width="700" />
+<img src="https://github.com/user-attachments/assets/8abc7501-7818-4b99-af4f-cfcbc78e7aa4" width="200" />
 
 
 9.  **Join (`@/components/Join`):**
@@ -119,7 +130,8 @@ O projeto consiste em uma landing page single-page composta por várias seções
     *   As animações e posições das imagens se adaptam entre desktop e mobile.
     *   GSAP é carregado dinamicamente quando a seção se torna visível.
 
-![Image](https://github.com/user-attachments/assets/9c284174-eafa-4b85-8b8d-7ee03fe5932a)
+<img src="https://github.com/user-attachments/assets/7f2a9359-e83f-4a4f-9c37-553139dcd631" width="700" />
+<img src="https://github.com/user-attachments/assets/a58b5d3c-2608-4857-9ee8-6ffdb0cab19e" width="200" />
 
 
 10. **Request (`@/components/Request`):**
