@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Component matches snapshot on desktop 1`] = `
+<section
+  aria-label="Overview of Teach: Education for students worldwide, sign-up and demo options, plus our leading partners."
+  class="hero"
+>
+  <div
+    class="hero_content hero_content_1"
+  >
+    <h1
+      class="hero_title"
+    >
+      Teach students worldwide
+      <img
+        alt="Trace"
+        class="hero_title_trace"
+        data-priority="false"
+        height="13"
+        loading="lazy"
+        src="[object Object]"
+        width="191"
+      />
+    </h1>
+    <p
+      class="hero_paragraph"
+    >
+      Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.
+    </p>
+    <div
+      class="hero_btns"
+    >
+      <button
+        class="hero_btn"
+      >
+        Sign Up Now
+      </button>
+      <a
+        class="hero_demo"
+        href="#"
+      >
+        <img
+          alt="Play"
+          class="hero_demo_play"
+          data-priority="false"
+          height="24"
+          loading="lazy"
+          src="[object Object]"
+          width="24"
+        />
+        View Demo
+      </a>
+    </div>
+    <div
+      class="hero_companies"
+    >
+      <p
+        class="hero_companies_text"
+      >
+        Trusted by
+        <br />
+        leading companies
+      </p>
+      <div
+        class="hero_companies_logos"
+      >
+        <img
+          alt="companies01"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+        <img
+          alt="companies02"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+        <img
+          alt="companies03"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+        <img
+          alt="companies04"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+        <img
+          alt="companies05"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="hero_content hero_content_2"
+  >
+    <img
+      alt="image_hero"
+      class="hero_image"
+      data-priority="true"
+      height="545"
+      src="[object Object]"
+      width="625"
+    />
+  </div>
+</section>
+`;
+
+exports[`Hero Component matches snapshot on mobile 1`] = `
+<section
+  aria-label="Overview of Teach: Education for students worldwide, sign-up and demo options, plus our leading partners."
+  class="hero"
+>
+  <div
+    class="hero_content hero_content_1"
+  >
+    <h1
+      class="hero_title"
+    >
+      Teach students worldwide
+      <img
+        alt="Trace"
+        class="hero_title_trace"
+        data-priority="false"
+        height="13"
+        loading="lazy"
+        src="[object Object]"
+        width="191"
+      />
+    </h1>
+    <p
+      class="hero_paragraph"
+    >
+      Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.
+    </p>
+    <div
+      class="hero_btns"
+    >
+      <button
+        class="hero_btn"
+      >
+        Sign Up Now
+      </button>
+      <a
+        class="hero_demo"
+        href="#"
+      >
+        <img
+          alt="Play"
+          class="hero_demo_play"
+          data-priority="false"
+          height="24"
+          loading="lazy"
+          src="[object Object]"
+          width="24"
+        />
+        View Demo
+      </a>
+    </div>
+    <div
+      class="hero_companies"
+    >
+      <p
+        class="hero_companies_text"
+      >
+        Trusted by leading companies
+      </p>
+      <div
+        class="hero_companies_logos"
+      >
+        <img
+          alt="companies01"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+        <img
+          alt="companies02"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+        <img
+          alt="companies03"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+        <img
+          alt="companies04"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+        <img
+          alt="companies05"
+          class="companies_logo_img"
+          data-priority="false"
+          height="32"
+          loading="lazy"
+          src="[object Object]"
+          width="32"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="hero_content hero_content_2"
+  >
+    <img
+      alt="image_hero"
+      class="hero_image"
+      data-priority="true"
+      height="545"
+      src="[object Object]"
+      width="625"
+    />
+  </div>
+</section>
+`;

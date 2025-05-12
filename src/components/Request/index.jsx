@@ -1,8 +1,6 @@
-
 import styles from "./styles.module.css";
 
 const Request = () => {
-
   return (
     <section className={styles.container} aria-label="Request">
       <div className={styles.content}>
@@ -24,7 +22,6 @@ const Request = () => {
       </div>
     </section>
   )
-
 };
 
 export default Request;

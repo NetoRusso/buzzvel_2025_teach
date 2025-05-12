@@ -61,13 +61,15 @@ const SocialProof = () => {
 
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
+  const [scrollLeftState, setScrollLeftState] = useState(0);
 
   const handleMouseDown = (e) => {
     if (!cardsContainerRef.current) return;
     setIsDragging(true);
-    setStartX(e.pageX - cardsContainerRef.current.offsetLeft);
-    setScrollLeft(cardsContainerRef.current.scrollLeft);
+    const currentOffsetLeft = Number(cardsContainerRef.current.offsetLeft) || 0;
+    const currentScrollLeft = Number(cardsContainerRef.current.scrollLeft) || 0;
+    setStartX(e.pageX - currentOffsetLeft);
+    setScrollLeftState(currentScrollLeft);
   };
 
   const handleMouseLeave = () => setIsDragging(false);
@@ -76,9 +78,10 @@ const SocialProof = () => {
   const handleMouseMove = (e) => {
     if (!isDragging || !cardsContainerRef.current) return;
     e.preventDefault();
-    const x = e.pageX - cardsContainerRef.current.offsetLeft;
+    const currentOffsetLeft = Number(cardsContainerRef.current.offsetLeft) || 0;
+    const x = e.pageX - currentOffsetLeft;
     const walk = (x - startX) * 1.2;
-    cardsContainerRef.current.scrollLeft = scrollLeft - walk;
+    cardsContainerRef.current.scrollLeft = scrollLeftState - walk;
   };
 
   return (
@@ -117,6 +120,7 @@ const SocialProof = () => {
           onMouseLeave={handleMouseLeave}
           onMouseUp={handleMouseUp}
           onMouseMove={handleMouseMove}
+          data-testid="cards-container"
         >
           {userCard.map((user, index) => (
             <div className={styles.card} key={index}>

@@ -12,26 +12,39 @@ const AnimatedCounter = ({ end, duration = 1500 }) => {
   }, []);
 
   useEffect(() => {
-    if (!inView) return;
+    if (!inView || !isClient) {
+      return;
+    }
 
     const startTime = performance.now();
+    let animationFrameId;
 
     const animate = (currentTime) => {
-      const progress = Math.min((currentTime - startTime) / duration, 1);
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
       const value = Math.floor(progress * end);
+      
       setCount(value);
 
       if (progress < 1) {
-        requestAnimationFrame(animate);
+        animationFrameId = requestAnimationFrame(animate);
       } else {
         setCount(end);
       }
     };
 
-    requestAnimationFrame(animate);
-  }, [inView, end, duration]);
+    animationFrameId = requestAnimationFrame(animate);
 
-  if (!isClient) return null;
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
+  }, [inView, end, duration, isClient]);
+
+  if (!isClient) {
+    return null;
+  }
 
   return <h2 ref={ref}>{formatNumber(count)}</h2>;
 };

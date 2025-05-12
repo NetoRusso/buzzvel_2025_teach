@@ -90,9 +90,6 @@
 .card {
   width: 100%;
   min-width: clamp(20rem, 17.654rem + 9.5511vw, 26.25rem);
-  /* width: 100%; */
-  /* max-width: 450px; */
-  /* min-width: 320px; */
   height: 375px;
   display: flex;
   flex-flow: column nowrap;
@@ -129,7 +126,6 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: center;
-  /* gap: 4px; */
 }
 
 .card_name {

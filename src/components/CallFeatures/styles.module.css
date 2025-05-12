@@ -116,7 +116,6 @@
   background-color: var(--background-white);
   box-shadow: 0px 0px 10px 0px #00000012, 0px 10px 15px -3px #0000001A;
   grid-area: 1 / 1 / 7 / 4;
-
 }
 
 .card_type {
@@ -186,11 +185,9 @@
   object-fit: cover;
   object-position: center;
   filter: drop-shadow(0px 0px 10px 0px #00000012, 0px 20px 25px -5px #0000001A);
-
 }
 
 .box_1_photo_b {
-  /* width: clamp(3.125rem, 2.4212rem + 2.8653vw, 5rem); */
   width: 100%;
   max-width: 80px;
   min-width: 24px;
@@ -203,7 +200,6 @@
 }
 
 .box_2 {
-  /* width: clamp(4.6875rem, 2.375rem + 10.2778vw, 11.625rem); */
   width: 100%;
   max-width: 305px;
   min-width: 75px;
@@ -217,7 +213,6 @@
   object-fit: cover;
   object-position: center;
   filter: drop-shadow(0px 0px 10px 0px #00000012, 0px 20px 25px -5px #0000001A);
-
 }
 
 .box_3 {
@@ -226,7 +221,6 @@
   min-width: 160px;
   height: auto;
   grid-area: 7 / 7 / 11 / 11;
-
 }
 
 .box_3_photo {
@@ -241,6 +235,5 @@
   .content {
     padding: 16px;
     flex-direction: column;
-
   }
 }

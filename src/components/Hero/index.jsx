@@ -16,11 +16,6 @@ import companies03 from "@/assets/SVG/companies03.svg";
 import companies04 from "@/assets/SVG/companies04.svg";
 import companies05 from "@/assets/SVG/companies05.svg";
 
-
-
-
-
-
 const Hero = () => {
 
   const { isMobile } = useContext(WindowWidthContext);

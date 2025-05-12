@@ -1,0 +1,423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialProof Component matches snapshot on desktop 1`] = `
+<section
+  aria-label="Social proof"
+  class="container"
+>
+  <div
+    class="content"
+  >
+    <div
+      class="header"
+    >
+      <h2
+        class="header_title"
+      >
+        What everyone says
+      </h2>
+      <div
+        class="header_btns"
+      >
+        <img
+          alt="prev"
+          class="header_btn"
+          height="48"
+          loading="lazy"
+          src="/img.jpg"
+          width="48"
+        />
+        <img
+          alt="next"
+          class="header_btn"
+          height="48"
+          loading="lazy"
+          src="/img.jpg"
+          width="48"
+        />
+      </div>
+    </div>
+    <div
+      class="cards_box"
+      data-testid="cards-container"
+    >
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de Hellen Jummy"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              Hellen Jummy
+            </p>
+            <p
+              class="card_role"
+            >
+              Financial Counselor
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de Ralph Edwards"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              Ralph Edwards
+            </p>
+            <p
+              class="card_role"
+            >
+              Math Teacher
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus, amet, hac imperdiet.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de Hellena John"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              Hellena John
+            </p>
+            <p
+              class="card_role"
+            >
+              Psychology Student
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Sapien, sollicitudin et vitae id et laoreet sapien consectetur. Felis egestas egestas amet aliquam sit euismod.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de David Oshodi"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              David Oshodi
+            </p>
+            <p
+              class="card_role"
+            >
+              Manager
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Sapien, sollicitudin et vitae id et laoreet sapien consectetur. Felis egestas egestas amet aliquam sit euismod.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de John Doe"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              John Doe
+            </p>
+            <p
+              class="card_role"
+            >
+              Engineer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`SocialProof Component matches snapshot on mobile 1`] = `
+<section
+  aria-label="Social proof"
+  class="container"
+>
+  <div
+    class="content"
+  >
+    <div
+      class="header"
+    >
+      <h2
+        class="header_title"
+      >
+        What everyone says
+      </h2>
+    </div>
+    <div
+      class="cards_box"
+      data-testid="cards-container"
+    >
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de Hellen Jummy"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              Hellen Jummy
+            </p>
+            <p
+              class="card_role"
+            >
+              Financial Counselor
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de Ralph Edwards"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              Ralph Edwards
+            </p>
+            <p
+              class="card_role"
+            >
+              Math Teacher
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus, amet, hac imperdiet.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de Hellena John"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              Hellena John
+            </p>
+            <p
+              class="card_role"
+            >
+              Psychology Student
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Sapien, sollicitudin et vitae id et laoreet sapien consectetur. Felis egestas egestas amet aliquam sit euismod.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de David Oshodi"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              David Oshodi
+            </p>
+            <p
+              class="card_role"
+            >
+              Manager
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <p
+          class="card_text"
+        >
+          Sapien, sollicitudin et vitae id et laoreet sapien consectetur. Felis egestas egestas amet aliquam sit euismod.
+        </p>
+        <div
+          class="card_ass"
+        >
+          <img
+            alt="imagem de John Doe"
+            class="card_img"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+          <div
+            class="card_info"
+          >
+            <p
+              class="card_name"
+            >
+              John Doe
+            </p>
+            <p
+              class="card_role"
+            >
+              Engineer
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

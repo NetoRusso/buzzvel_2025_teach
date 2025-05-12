@@ -37,8 +37,6 @@
   text-align: center;
 }
 
-
-
 .form {
   width: 100%;
   max-width: 570px;
@@ -129,6 +127,5 @@
 }
 
 .btn:hover {
-  /* scale: 0.95; */
   background-color: var(--blue-600);
 }

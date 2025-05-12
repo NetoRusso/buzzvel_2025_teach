@@ -4,7 +4,7 @@ import { motion, useAnimationFrame } from 'framer-motion';
 import * as flubber from 'flubber';
 import { useInView } from 'react-intersection-observer';
 
-const paths = [
+export const paths = [
   "M307.44,77.84c-14.03,74.3-44.79,81.86,17.59,144.24C542.13,439.18,0,514.97,0,251.07,0,4.94,336.32-75.08,307.44,77.84Z",
   "M330.62,48.13c72.73,72.73,26.71,407.6-30.4,294.4C121.02-12.67-.58,668.93,0,265.45.36,19.33,220.57-61.92,330.62,48.13Z",
   "M330.61,48.13c72.73,72.73-92.09,162.16,8,240C410.61,344.13-.59,668.93,0,265.45.36,19.33,220.57-61.92,330.61,48.13Z",
@@ -46,7 +46,7 @@ const Blob = ({ fill = "#FB923C", style }) => {
     if (!shouldAnimate || interpolators.length === 0) return;
 
     const total = interpolators.length;
-    const loopTime = 10000; // 10 segundos por ciclo
+    const loopTime = 10000;
     const progress = (t % loopTime) / loopTime;
     const index = Math.floor(progress * total);
     const localT = (progress * total) - index;
@@ -74,8 +74,12 @@ const Blob = ({ fill = "#FB923C", style }) => {
           onMouseLeave={() => setHover(false)}
         />
       ) : (
-
-        <path fill={fill} d={paths[0]} style={{transform: 'scale(0.9)'}} />
+        <path
+          data-testid="static-placeholder-path"
+          fill={fill}
+          d={paths[0]}
+          style={{transform: 'scale(0.9)'}}
+        />
       )}
     </svg>
   );

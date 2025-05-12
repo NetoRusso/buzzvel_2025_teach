@@ -1,25 +1,20 @@
-import { useContext, useRef, useEffect } from "react"; // Removi useState se não for usado para outra coisa
+'use client';
+import { useContext, useRef, useEffect } from "react";
 import { WindowWidthContext } from "@/context/WindowWidthContext";
 import classNames from "classnames";
 import styles from "./styles.module.css";
-
 import Image from "next/image";
 import Link from "next/link";
-
-// Imports de SVG e Imagens
 import trace from "@/assets/SVG/trace.svg";
 import check from "@/assets/SVG/check.svg";
 import detail from "@/assets/SVG/points_features.svg";
 import arrow from "@/assets/SVG/arrow_right.svg";
 import desktop from "@/assets/Desktop_features.png";
-
-// Importações dinâmicas
 import dynamic from 'next/dynamic';
-import { useInView } from 'react-intersection-observer'; // Renomeado para clareza se necessário, mas pode manter se não houver conflito de nome
+import { useInView } from 'react-intersection-observer';
 
-// Carregue o Blob dinamicamente
 const DynamicBlob = dynamic(() => import('../Blob'), {
-  ssr: false, 
+  ssr: false,
 });
 
 const Features = () => {
@@ -57,20 +52,12 @@ const Features = () => {
 
   const handleMouseMove = (e) => {
     if (!isDragging.current || !cardsRef.current) return;
-    // e.preventDefault();
     const x = e.pageX - cardsRef.current.offsetLeft;
-    const walk = (x - startX.current) * 1; 
+    const walk = (x - startX.current) * 1;
     cardsRef.current.scrollLeft = scrollLeft.current - walk;
   };
 
   const handleMouseUp = () => {
-    isDragging.current = false;
-    if (cardsRef.current) {
-      cardsRef.current.style.cursor = 'grab';
-    }
-  };
-
-  const handleMouseLeave = () => {
     isDragging.current = false;
     if (cardsRef.current) {
       cardsRef.current.style.cursor = 'grab';
@@ -84,14 +71,13 @@ const Features = () => {
       document.addEventListener('mousemove', handleMouseMove);
       document.addEventListener('mouseup', handleMouseUp);
 
-
       return () => {
         cardsContainer.removeEventListener('mousedown', handleMouseDown);
         document.removeEventListener('mousemove', handleMouseMove);
         document.removeEventListener('mouseup', handleMouseUp);
       };
     }
-  }, []);
+  }, []); 
 
   return (
     <section className={styles.features} aria-label="Features">
@@ -152,6 +138,7 @@ const Features = () => {
           ref={cardsRef}
           className={styles.features_cards}
           style={{ cursor: 'grab' }}
+          data-testid="features-cards-container"
         >
           {cards.map((card, index) => (
             <div key={index} className={styles.features_card}>

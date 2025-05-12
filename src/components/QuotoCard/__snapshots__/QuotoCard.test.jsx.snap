@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuotoCard Component matches snapshot 1`] = `
+<section
+  aria-label="Quotes slider"
+  class="container"
+>
+  <div
+    class="content"
+  >
+    <div
+      class="main_container"
+    >
+      <div
+        class="slider"
+      >
+        <div
+          class="box_1"
+        >
+          <div
+            class="btn"
+          >
+            <img
+              alt="arrow left"
+              height="31.5"
+              loading="lazy"
+              src="/img.jpg"
+              width="18"
+            />
+          </div>
+          <div
+            class="box_1_content"
+          >
+            <p
+              class="texts_msg"
+            >
+              Id urna, nisl, ut quam. Diam suspendisse fringilla quam arcu mattis est velit in. Nibh in purus sit convallis phasellus ut. At vel erat ultricies commodo. Neque suspendisse a habitasse commodo.
+            </p>
+            <div
+              class="texts_ass"
+            >
+              <p
+                class="texts_ass_name"
+              >
+                Marie Poirot,
+              </p>
+              <p
+                class="texts_ass_role"
+              >
+                Bigapp
+              </p>
+            </div>
+            <div
+              class="dots"
+            />
+          </div>
+        </div>
+        <div
+          class="box_2"
+        >
+          <div
+            class="box_2_content"
+          >
+            <img
+              alt="photo"
+              class="content_photo"
+              height="415"
+              loading="lazy"
+              src="/img.jpg"
+              width="528"
+            />
+          </div>
+          <div
+            class="btn"
+          >
+            <img
+              alt="arrow right"
+              height="31.5"
+              loading="lazy"
+              src="/img.jpg"
+              width="18"
+            />
+          </div>
+          <div
+            class="details_bg"
+          />
+          <img
+            alt="chat quotes"
+            class="details_chat"
+            height="48"
+            loading="lazy"
+            src="/img.jpg"
+            width="48"
+          />
+          <img
+            alt="squares"
+            class="details_squares"
+            height="155"
+            loading="lazy"
+            src="/img.jpg"
+            width="155"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

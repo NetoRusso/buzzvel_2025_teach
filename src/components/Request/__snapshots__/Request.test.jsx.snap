@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Request Component matches snapshot 1`] = `
+<section
+  aria-label="Request"
+  class="container"
+>
+  <div
+    class="content"
+  >
+    <h2
+      class="title"
+    >
+      Ready for your next project?
+    </h2>
+    <p
+      class="paragraph"
+    >
+      Sit elit feugiat turpis sed integer integer accumsan turpis.
+    </p>
+    <form
+      class="form"
+    >
+      <label
+        class="label"
+        for="email"
+      >
+        Email
+      </label>
+      <input
+        class="input"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required=""
+        type="email"
+      />
+      <label
+        class="label"
+        for="message"
+      >
+        Message
+      </label>
+      <textarea
+        class="textarea"
+        id="message"
+        name="message"
+        placeholder="What are you say ?"
+        required=""
+      />
+      <button
+        class="btn"
+        type="submit"
+      >
+        Request Demo
+      </button>
+    </form>
+  </div>
+</section>
+`;

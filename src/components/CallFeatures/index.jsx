@@ -3,14 +3,12 @@
 import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
-
 import trace from "@/assets/SVG/trace.svg";
 import arrow from "@/assets/SVG/arrow_right.svg";
 import picture01 from "@/assets/picture_features_1.png";
 import picture01b from "@/assets/picture_features_1b.png";
 import picture02 from "@/assets/picture_features_2.png";
 import picture03 from "@/assets/picture_features_3.png";
-
 import dynamic from 'next/dynamic';
 import { useInView } from 'react-intersection-observer';
 
@@ -19,10 +17,9 @@ const DynamicBlob = dynamic(() => import('../Blob'), {
 });
 
 const CallFeatures = () => {
-  // Hook useInView para a seção que contém o Blob
   const { ref: blobSectionRef, inView: blobSectionIsVisible } = useInView({
     triggerOnce: true,
-    rootMargin: '100px 0px',// Ajuste conforme necessário
+    rootMargin: '100px 0px',
   });
 
   return (

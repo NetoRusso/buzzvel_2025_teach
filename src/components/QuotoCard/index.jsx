@@ -1,4 +1,3 @@
-
 import styles from "./styles.module.css";
 import Image from "next/image";
 
@@ -8,16 +7,11 @@ import arrow_left from "@/assets/SVG/arrow_left_white.svg";
 import arrow_right from "@/assets/SVG/arrow_right_blue.svg";
 import photo from "@/assets/picture_quote.png";
 
-
 const QuotoCard = () => {
-
   return (
     <section className={styles.container} aria-label="Quotes slider">
-
       <div className={styles.content}>
-
         <div className={styles.main_container}>
-
           <div className={styles.slider}>
             <div className={styles.box_1}>
               <div className={styles.btn}>
@@ -50,7 +44,6 @@ const QuotoCard = () => {
               <Image src={squares} alt="squares" width={155} height={155} className={styles.details_squares} loading="lazy" />
             </div>
           </div>
-
         </div>
       </div>
     </section>

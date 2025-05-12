@@ -72,6 +72,7 @@ const Menu = () => {
                     [styles.menu_desktop_nav_list_item_dropdown]: true,
                   })}
                   onClick={handleClick}
+                  data-testid="desktop-resources-trigger"
                 >
                   <p
                     className={classNames({
@@ -88,6 +89,7 @@ const Menu = () => {
                       [styles.menu_desktop_nav_list_item_link_dropdown]: true,
                       [styles.active]: isDropdownVisible,
                     })}
+                    data-testid="desktop-resources-dropdown"
                   >
                     <ul className={styles.menu_desktop_nav_list_item_link_dropdown_list}>
                       <li className={styles.menu_desktop_nav_dropdown_list_item}>
@@ -130,6 +132,7 @@ const Menu = () => {
             {modal && (<div
               className={styles.modal}
               onClick={() => handleClose()}
+              data-testid="mobile-menu-modal-backdrop"
             />)}
             <div
               className={styles.menu_mobile_btn}
@@ -137,6 +140,9 @@ const Menu = () => {
                 setModal(true);
                 setMenuOpen(true);
               }}
+              data-testid="mobile-menu-trigger"
+              role="button"
+              aria-label="Open mobile menu"
             >
               <span />
               <span />
@@ -146,8 +152,18 @@ const Menu = () => {
               <div className={classNames({
                 [styles.menu_mobile_box]: true,
                 [styles.menu_mobile_box_closing]: !modal,
-              })}>
-                <span className={styles.menu_mobile_close_btn} onClick={() => handleClose()}> &times; </span>
+              })}
+              data-testid="mobile-menu-box"
+              >
+                <span
+                  className={styles.menu_mobile_close_btn}
+                  onClick={() => handleClose()}
+                  data-testid="mobile-menu-close-button"
+                  role="button"
+                  aria-label="Close mobile menu"
+                >
+                    ×
+                </span>
                 <div className={styles.menu_mobile_box_content}>
                   <div className={styles.menu_mobile_nav}>
                     <ul className={styles.menu_mobile_nav_list}>
@@ -164,13 +180,23 @@ const Menu = () => {
                         <p
                           className={styles.menu_mobile_nav_list_item_link}
                           onClick={() => setIsDropdownVisible(!isDropdownVisible)}
+                          data-testid="mobile-resources-trigger"
+                          role="button"
                         >
                           <Image src={arrowLeft} alt="seta para esquerda" width={7.67} height={13.34} />
                           Resources
                         </p>
                         {isDropdownVisible && (
-                          <div className={styles.menu_mobile_dropdown}>
-                            <span className={styles.menu_mobile_dropdown_close_btn} onClick={() => setIsDropdownVisible(!isDropdownVisible)}> &times; </span>
+                          <div className={styles.menu_mobile_dropdown} data-testid="mobile-resources-dropdown">
+                            <span
+                              className={styles.menu_mobile_dropdown_close_btn}
+                              onClick={() => setIsDropdownVisible(!isDropdownVisible)}
+                              data-testid="mobile-resources-dropdown-close-button"
+                              role="button"
+                              aria-label="Close resources dropdown"
+                            >
+                                ×
+                            </span>
                             <div className={styles.menu_mobile_dropdow_content}>
                               <ul className={styles.menu_mobile_dropdown_list}>
                                 <li className={styles.menu_mobile_dropdown_list_item}>
@@ -185,7 +211,6 @@ const Menu = () => {
                                 <li className={styles.menu_mobile_dropdown_list_item}>
                                   <Link href="#" className={styles.menu_mobile_dropdown_list_item_link}>FAQs</Link>
                                 </li>
-
                               </ul>
                             </div>
                           </div>

@@ -1,0 +1,771 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Join Component matches snapshot on desktop when in view 1`] = `
+<section
+  aria-label="Join us"
+  class="container "
+>
+  <div
+    class="content"
+  >
+    <div
+      class="box"
+    >
+      <h2
+        class="title"
+      >
+        Join a world of learning
+      </h2>
+      <p
+        class="description"
+      >
+        Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. Risus elit et fringilla habitant ut facilisi.
+      </p>
+      <button
+        class="btn"
+      >
+        Sign Up Now
+      </button>
+    </div>
+    <div
+      class="visuals_container"
+    >
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl01"
+        data-testid="visual-item-upl01"
+        style="width: 60px; height: 60px;"
+      >
+        <img
+          alt="User"
+          height="60"
+          loading="lazy"
+          src="id05.svg"
+          width="60"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl02"
+        data-testid="visual-item-upl02"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="User"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl03"
+        data-testid="visual-item-upl03"
+        style="width: 64px; height: 64px;"
+      >
+        <img
+          alt="User"
+          height="64"
+          loading="lazy"
+          src="id05.svg"
+          width="64"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl04"
+        data-testid="visual-item-upl04"
+        style="width: 96px; height: 96px;"
+      >
+        <img
+          alt="User"
+          height="96"
+          loading="lazy"
+          src="id05.svg"
+          width="96"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl05"
+        data-testid="visual-item-upl05"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="User"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl06"
+        data-testid="visual-item-upl06"
+        style="width: 120px; height: 120px;"
+      >
+        <img
+          alt="User"
+          height="120"
+          loading="lazy"
+          src="id05.svg"
+          width="120"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl07"
+        data-testid="visual-item-upl07"
+        style="width: 32px; height: 32px;"
+      >
+        <img
+          alt="User"
+          height="32"
+          loading="lazy"
+          src="id05.svg"
+          width="32"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl08"
+        data-testid="visual-item-upl08"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="User"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd01"
+        data-testid="visual-item-upd01"
+        style="width: 56px; height: 56px;"
+      >
+        <img
+          alt="User"
+          height="56"
+          loading="lazy"
+          src="id05.svg"
+          width="56"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd02"
+        data-testid="visual-item-upd02"
+        style="width: 96px; height: 96px;"
+      >
+        <img
+          alt="User"
+          height="96"
+          loading="lazy"
+          src="id05.svg"
+          width="96"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd03"
+        data-testid="visual-item-upd03"
+        style="width: 64px; height: 64px;"
+      >
+        <img
+          alt="User"
+          height="64"
+          loading="lazy"
+          src="id05.svg"
+          width="64"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd04"
+        data-testid="visual-item-upd04"
+        style="width: 128px; height: 128px;"
+      >
+        <img
+          alt="User"
+          height="128"
+          loading="lazy"
+          src="id05.svg"
+          width="128"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd05"
+        data-testid="visual-item-upd05"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="User"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd06"
+        data-testid="visual-item-upd06"
+        style="width: 40px; height: 40px;"
+      >
+        <img
+          alt="User"
+          height="40"
+          loading="lazy"
+          src="id05.svg"
+          width="40"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il01"
+        data-testid="visual-item-il01"
+        style="width: 56px; height: 56px;"
+      >
+        <img
+          alt="Icon"
+          height="56"
+          loading="lazy"
+          src="id05.svg"
+          width="56"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il02"
+        data-testid="visual-item-il02"
+        style="width: 96px; height: 96px;"
+      >
+        <img
+          alt="Icon"
+          height="96"
+          loading="lazy"
+          src="id05.svg"
+          width="96"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il03"
+        data-testid="visual-item-il03"
+        style="width: 40px; height: 40px;"
+      >
+        <img
+          alt="Icon"
+          height="40"
+          loading="lazy"
+          src="id05.svg"
+          width="40"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il04"
+        data-testid="visual-item-il04"
+        style="width: 32px; height: 32px;"
+      >
+        <img
+          alt="Icon"
+          height="32"
+          loading="lazy"
+          src="id05.svg"
+          width="32"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il05"
+        data-testid="visual-item-il05"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="Icon"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il06"
+        data-testid="visual-item-il06"
+        style="width: 60px; height: 60px;"
+      >
+        <img
+          alt="Icon"
+          height="60"
+          loading="lazy"
+          src="id05.svg"
+          width="60"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id01"
+        data-testid="visual-item-id01"
+        style="width: 104px; height: 104px;"
+      >
+        <img
+          alt="Icon"
+          height="104"
+          loading="lazy"
+          src="id05.svg"
+          width="104"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id02"
+        data-testid="visual-item-id02"
+        style="width: 64px; height: 64px;"
+      >
+        <img
+          alt="Icon"
+          height="64"
+          loading="lazy"
+          src="id05.svg"
+          width="64"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id03"
+        data-testid="visual-item-id03"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="Icon"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id04"
+        data-testid="visual-item-id04"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="Icon"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id05"
+        data-testid="visual-item-id05"
+        style="width: 32px; height: 32px;"
+      >
+        <img
+          alt="Icon"
+          height="32"
+          loading="lazy"
+          src="id05.svg"
+          width="32"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Join Component matches snapshot on mobile when in view 1`] = `
+<section
+  aria-label="Join us"
+  class="container mobile_layout"
+>
+  <div
+    class="content"
+  >
+    <div
+      class="box"
+    >
+      <h2
+        class="title"
+      >
+        Join a world of learning
+      </h2>
+      <p
+        class="description"
+      >
+        Malesuada ut aliquam at ac est nisi, interdum etiam dignissim. Risus elit et fringilla habitant ut facilisi.
+      </p>
+      <button
+        class="btn"
+      >
+        Sign Up Now
+      </button>
+    </div>
+    <div
+      class="visuals_container"
+    >
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl01"
+        data-testid="visual-item-upl01"
+        style="width: 60px; height: 60px;"
+      >
+        <img
+          alt="User"
+          height="60"
+          loading="lazy"
+          src="id05.svg"
+          width="60"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl02"
+        data-testid="visual-item-upl02"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="User"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl03"
+        data-testid="visual-item-upl03"
+        style="width: 64px; height: 64px;"
+      >
+        <img
+          alt="User"
+          height="64"
+          loading="lazy"
+          src="id05.svg"
+          width="64"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl04"
+        data-testid="visual-item-upl04"
+        style="width: 96px; height: 96px;"
+      >
+        <img
+          alt="User"
+          height="96"
+          loading="lazy"
+          src="id05.svg"
+          width="96"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl05"
+        data-testid="visual-item-upl05"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="User"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl06"
+        data-testid="visual-item-upl06"
+        style="width: 120px; height: 120px;"
+      >
+        <img
+          alt="User"
+          height="120"
+          loading="lazy"
+          src="id05.svg"
+          width="120"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl07"
+        data-testid="visual-item-upl07"
+        style="width: 32px; height: 32px;"
+      >
+        <img
+          alt="User"
+          height="32"
+          loading="lazy"
+          src="id05.svg"
+          width="32"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upl08"
+        data-testid="visual-item-upl08"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="User"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd01"
+        data-testid="visual-item-upd01"
+        style="width: 56px; height: 56px;"
+      >
+        <img
+          alt="User"
+          height="56"
+          loading="lazy"
+          src="id05.svg"
+          width="56"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd02"
+        data-testid="visual-item-upd02"
+        style="width: 96px; height: 96px;"
+      >
+        <img
+          alt="User"
+          height="96"
+          loading="lazy"
+          src="id05.svg"
+          width="96"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd03"
+        data-testid="visual-item-upd03"
+        style="width: 64px; height: 64px;"
+      >
+        <img
+          alt="User"
+          height="64"
+          loading="lazy"
+          src="id05.svg"
+          width="64"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd04"
+        data-testid="visual-item-upd04"
+        style="width: 128px; height: 128px;"
+      >
+        <img
+          alt="User"
+          height="128"
+          loading="lazy"
+          src="id05.svg"
+          width="128"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd05"
+        data-testid="visual-item-upd05"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="User"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper user_photo_wrapper"
+        data-id="upd06"
+        data-testid="visual-item-upd06"
+        style="width: 40px; height: 40px;"
+      >
+        <img
+          alt="User"
+          height="40"
+          loading="lazy"
+          src="id05.svg"
+          width="40"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il01"
+        data-testid="visual-item-il01"
+        style="width: 56px; height: 56px;"
+      >
+        <img
+          alt="Icon"
+          height="56"
+          loading="lazy"
+          src="id05.svg"
+          width="56"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il02"
+        data-testid="visual-item-il02"
+        style="width: 96px; height: 96px;"
+      >
+        <img
+          alt="Icon"
+          height="96"
+          loading="lazy"
+          src="id05.svg"
+          width="96"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il03"
+        data-testid="visual-item-il03"
+        style="width: 40px; height: 40px;"
+      >
+        <img
+          alt="Icon"
+          height="40"
+          loading="lazy"
+          src="id05.svg"
+          width="40"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il04"
+        data-testid="visual-item-il04"
+        style="width: 32px; height: 32px;"
+      >
+        <img
+          alt="Icon"
+          height="32"
+          loading="lazy"
+          src="id05.svg"
+          width="32"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il05"
+        data-testid="visual-item-il05"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="Icon"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="il06"
+        data-testid="visual-item-il06"
+        style="width: 60px; height: 60px;"
+      >
+        <img
+          alt="Icon"
+          height="60"
+          loading="lazy"
+          src="id05.svg"
+          width="60"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id01"
+        data-testid="visual-item-id01"
+        style="width: 104px; height: 104px;"
+      >
+        <img
+          alt="Icon"
+          height="104"
+          loading="lazy"
+          src="id05.svg"
+          width="104"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id02"
+        data-testid="visual-item-id02"
+        style="width: 64px; height: 64px;"
+      >
+        <img
+          alt="Icon"
+          height="64"
+          loading="lazy"
+          src="id05.svg"
+          width="64"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id03"
+        data-testid="visual-item-id03"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="Icon"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id04"
+        data-testid="visual-item-id04"
+        style="width: 48px; height: 48px;"
+      >
+        <img
+          alt="Icon"
+          height="48"
+          loading="lazy"
+          src="id05.svg"
+          width="48"
+        />
+      </div>
+      <div
+        class="image_wrapper element_float_wrapper"
+        data-id="id05"
+        data-testid="visual-item-id05"
+        style="width: 32px; height: 32px;"
+      >
+        <img
+          alt="Icon"
+          height="32"
+          loading="lazy"
+          src="id05.svg"
+          width="32"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;

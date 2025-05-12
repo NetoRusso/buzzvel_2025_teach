@@ -56,7 +56,7 @@
   max-width: 239px;
   min-width: 184px;
   height: clamp(56px, calc(100vw * 64 / 1440), 64px);
-  max-width: 64px;
+  /* max-width: 64px; /* Esta linha parece um erro, pois contradiz a anterior */
   min-height: 56px;
   border-radius: 8px;
   border: none;
@@ -103,4 +103,15 @@
 
 .element_float_wrapper img {
   border-radius: 0;
+}
+
+.container.mobile_layout .content {
+  padding-top: 60px; 
+  padding-bottom: 60px;
+}
+
+.container.mobile_layout .box {
+  margin-top: 100px; 
+  margin-bottom: 100px;
+  max-width: 90%; 
 }

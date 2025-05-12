@@ -15,27 +15,27 @@ const Count = () => {
       <div className={styles.content}>
         <div className={styles.box}>
           <Image src={countries} alt="countries" width={64} height={64} loading="lazy" className={styles.box_img} />
-          <h2 className={styles.count}>
+          <span className={styles.count}>
             <AnimateCounter end={195} />
-          </h2>
+          </span>
           <p className={styles.text}>
             user countries
           </p>
         </div>
         <div className={styles.box}>
           <Image src={teachers} alt="teachers" width={64} height={64} loading="lazy" className={styles.box_img} />
-          <h2 className={styles.count}>
+          <span className={styles.count}>
             <AnimateCounter end={1000} />
-          </h2>
+          </span>
           <p className={styles.text}>
             valued teachers
           </p>
         </div>
         <div className={styles.box}>
           <Image src={students} alt="students" width={64} height={64} loading="lazy" className={styles.box_img} />
-          <h2 className={styles.count}>
+          <span className={styles.count}>
             <AnimateCounter end={17000} />
-          </h2>
+          </span>
           <p className={styles.text}>
             happy students
           </p>

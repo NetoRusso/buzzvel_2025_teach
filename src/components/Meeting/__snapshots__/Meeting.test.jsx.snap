@@ -1,0 +1,293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Meeting Component matches snapshot on initial render 1`] = `
+<section
+  aria-label="Meeting with teachers"
+  class="container"
+>
+  <div
+    class="content"
+  >
+    <div
+      class="grid_pics"
+    >
+      <img
+        alt="photo_1"
+        class="content_photo content_photo_1"
+        height="192"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.95; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_2"
+        class="content_photo content_photo_2"
+        height="258"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="172"
+      />
+      <img
+        alt="photo_3"
+        class="content_photo content_photo_3"
+        height="212"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_4"
+        class="content_photo content_photo_4"
+        height="215"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_5"
+        class="content_photo content_photo_5"
+        height="160"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_6"
+        class="content_photo content_photo_6"
+        height="171"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_7"
+        class="content_photo content_photo_7"
+        height="172"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_8"
+        class="content_photo content_photo_8"
+        height="192"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_9"
+        class="content_photo content_photo_9"
+        height="255"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="160"
+      />
+      <img
+        alt="photo_10"
+        class="content_photo content_photo_10"
+        height="165"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+    </div>
+    <div
+      class="content_text"
+    >
+      <h2
+        class="content_text_title"
+      >
+        Meet 
+        <span>
+          international 
+          <img
+            alt="plane"
+            class="plane"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+        </span>
+        students & teachers
+      </h2>
+      <p
+        class="content_text_paragraph"
+      >
+        Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.
+      </p>
+      <a
+        class="content_link"
+        href="#"
+      >
+        Explore teachers and students
+        <img
+          alt="arrow"
+          class="arrow"
+          height="13.31"
+          loading="lazy"
+          src="/img.jpg"
+          width="14"
+        />
+      </a>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Meeting Component matches snapshot when a photo is focused 1`] = `
+<section
+  aria-label="Meeting with teachers"
+  class="container"
+>
+  <div
+    class="content"
+  >
+    <div
+      class="grid_pics"
+    >
+      <img
+        alt="photo_1"
+        class="content_photo content_photo_1"
+        height="192"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.95; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_2"
+        class="content_photo content_photo_2"
+        height="258"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="172"
+      />
+      <img
+        alt="photo_3"
+        class="content_photo content_photo_3"
+        height="212"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_4"
+        class="content_photo content_photo_4"
+        height="215"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_5"
+        class="content_photo content_photo_5"
+        height="160"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(1.05); opacity: 1; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 1;"
+        width="128"
+      />
+      <img
+        alt="photo_6"
+        class="content_photo content_photo_6"
+        height="171"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_7"
+        class="content_photo content_photo_7"
+        height="172"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_8"
+        class="content_photo content_photo_8"
+        height="192"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+      <img
+        alt="photo_9"
+        class="content_photo content_photo_9"
+        height="255"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="160"
+      />
+      <img
+        alt="photo_10"
+        class="content_photo content_photo_10"
+        height="165"
+        loading="lazy"
+        src="/img.jpg"
+        style="transform: scale(0.95); opacity: 0.8; transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; z-index: 0;"
+        width="128"
+      />
+    </div>
+    <div
+      class="content_text"
+    >
+      <h2
+        class="content_text_title"
+      >
+        Meet 
+        <span>
+          international 
+          <img
+            alt="plane"
+            class="plane"
+            height="64"
+            loading="lazy"
+            src="/img.jpg"
+            width="64"
+          />
+        </span>
+        students & teachers
+      </h2>
+      <p
+        class="content_text_paragraph"
+      >
+        Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.
+      </p>
+      <a
+        class="content_link"
+        href="#"
+      >
+        Explore teachers and students
+        <img
+          alt="arrow"
+          class="arrow"
+          height="13.31"
+          loading="lazy"
+          src="/img.jpg"
+          width="14"
+        />
+      </a>
+    </div>
+  </div>
+</section>
+`;

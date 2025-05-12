@@ -1,0 +1,608 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu Component Desktop View matches snapshot on desktop 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="content"
+  >
+    <img
+      alt="Logo"
+      class="menu_logo"
+      height="35"
+      src="/img.jpg"
+      width="103"
+    />
+    <div
+      class="menu_desktop"
+    >
+      <nav
+        class="menu_desktop_nav"
+      >
+        <ul
+          class="menu_desktop_nav_list"
+        >
+          <li
+            class="menu_desktop_nav_list_item"
+          >
+            <a
+              class="menu_desktop_nav_list_item_link"
+              href="#"
+            >
+              Products
+            </a>
+          </li>
+          <li
+            class="menu_desktop_nav_list_item"
+          >
+            <a
+              class="menu_desktop_nav_list_item_link"
+              href="#"
+            >
+              Solutions
+            </a>
+          </li>
+          <li
+            class="menu_desktop_nav_list_item"
+          >
+            <a
+              class="menu_desktop_nav_list_item_link"
+              href="#"
+            >
+              Pricing
+            </a>
+          </li>
+          <li
+            class="menu_desktop_nav_list_item menu_desktop_nav_list_item_dropdown"
+            data-testid="desktop-resources-trigger"
+          >
+            <p
+              class="menu_desktop_nav_list_item_link menu_desktop_nav_list_item_link_open_dropdown"
+            >
+              Resources
+              <img
+                alt="arrow"
+                height="7.67"
+                src="/img.jpg"
+                width="13.34"
+              />
+            </p>
+            <div
+              class="menu_desktop_nav_list_item_link_dropdown"
+              data-testid="desktop-resources-dropdown"
+            >
+              <ul
+                class="menu_desktop_nav_list_item_link_dropdown_list"
+              >
+                <li
+                  class="menu_desktop_nav_dropdown_list_item"
+                >
+                  <a
+                    class="menu_desktop_nav_dropdown_list_item_link"
+                    href="#"
+                  >
+                    Help Center
+                  </a>
+                </li>
+                <li
+                  class="menu_desktop_nav_dropdown_list_item"
+                >
+                  <a
+                    class="menu_desktop_nav_dropdown_list_item_link"
+                    href="#"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li
+                  class="menu_desktop_nav_dropdown_list_item"
+                >
+                  <a
+                    class="menu_desktop_nav_dropdown_list_item_link"
+                    href="#"
+                  >
+                    Tutorials
+                  </a>
+                </li>
+                <li
+                  class="menu_desktop_nav_dropdown_list_item"
+                >
+                  <a
+                    class="menu_desktop_nav_dropdown_list_item_link"
+                    href="#"
+                  >
+                    FAQs
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="menu_desktop_acess"
+      >
+        <a
+          class="menu_desktop_nav_list_item_link"
+          href="#"
+        >
+          Log In
+        </a>
+        <button
+          class="menu_desktop_acess_button"
+        >
+          Sing Up Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Menu Component Desktop View matches snapshot on desktop with dropdown open 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="content"
+  >
+    <img
+      alt="Logo"
+      class="menu_logo"
+      height="35"
+      src="/img.jpg"
+      width="103"
+    />
+    <div
+      class="menu_desktop"
+    >
+      <nav
+        class="menu_desktop_nav"
+      >
+        <ul
+          class="menu_desktop_nav_list"
+        >
+          <li
+            class="menu_desktop_nav_list_item"
+          >
+            <a
+              class="menu_desktop_nav_list_item_link"
+              href="#"
+            >
+              Products
+            </a>
+          </li>
+          <li
+            class="menu_desktop_nav_list_item"
+          >
+            <a
+              class="menu_desktop_nav_list_item_link"
+              href="#"
+            >
+              Solutions
+            </a>
+          </li>
+          <li
+            class="menu_desktop_nav_list_item"
+          >
+            <a
+              class="menu_desktop_nav_list_item_link"
+              href="#"
+            >
+              Pricing
+            </a>
+          </li>
+          <li
+            class="menu_desktop_nav_list_item menu_desktop_nav_list_item_dropdown"
+            data-testid="desktop-resources-trigger"
+          >
+            <p
+              class="menu_desktop_nav_list_item_link menu_desktop_nav_list_item_link_open_dropdown"
+            >
+              Resources
+              <img
+                alt="arrow"
+                height="7.67"
+                src="/img.jpg"
+                width="13.34"
+              />
+            </p>
+            <div
+              class="menu_desktop_nav_list_item_link_dropdown active"
+              data-testid="desktop-resources-dropdown"
+            >
+              <ul
+                class="menu_desktop_nav_list_item_link_dropdown_list"
+              >
+                <li
+                  class="menu_desktop_nav_dropdown_list_item"
+                >
+                  <a
+                    class="menu_desktop_nav_dropdown_list_item_link"
+                    href="#"
+                  >
+                    Help Center
+                  </a>
+                </li>
+                <li
+                  class="menu_desktop_nav_dropdown_list_item"
+                >
+                  <a
+                    class="menu_desktop_nav_dropdown_list_item_link"
+                    href="#"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li
+                  class="menu_desktop_nav_dropdown_list_item"
+                >
+                  <a
+                    class="menu_desktop_nav_dropdown_list_item_link"
+                    href="#"
+                  >
+                    Tutorials
+                  </a>
+                </li>
+                <li
+                  class="menu_desktop_nav_dropdown_list_item"
+                >
+                  <a
+                    class="menu_desktop_nav_dropdown_list_item_link"
+                    href="#"
+                  >
+                    FAQs
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="menu_desktop_acess"
+      >
+        <a
+          class="menu_desktop_nav_list_item_link"
+          href="#"
+        >
+          Log In
+        </a>
+        <button
+          class="menu_desktop_acess_button"
+        >
+          Sing Up Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Menu Component Mobile View matches snapshot on mobile (menu and resources dropdown open) 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="content content_mobile"
+  >
+    <img
+      alt="Logo"
+      class="menu_logo"
+      height="35"
+      src="/img.jpg"
+      width="103"
+    />
+    <div
+      class="modal"
+      data-testid="mobile-menu-modal-backdrop"
+    />
+    <div
+      aria-label="Open mobile menu"
+      class="menu_mobile_btn"
+      data-testid="mobile-menu-trigger"
+      role="button"
+    >
+      <span />
+      <span />
+      <span />
+    </div>
+    <div
+      class="menu_mobile_box"
+      data-testid="mobile-menu-box"
+    >
+      <span
+        aria-label="Close mobile menu"
+        class="menu_mobile_close_btn"
+        data-testid="mobile-menu-close-button"
+        role="button"
+      >
+        ×
+      </span>
+      <div
+        class="menu_mobile_box_content"
+      >
+        <div
+          class="menu_mobile_nav"
+        >
+          <ul
+            class="menu_mobile_nav_list"
+          >
+            <li
+              class="menu_mobile_nav_list_item"
+            >
+              <a
+                class="menu_mobile_nav_list_item_link"
+                href="#"
+              >
+                Products
+              </a>
+            </li>
+            <li
+              class="menu_mobile_nav_list_item"
+            >
+              <a
+                class="menu_mobile_nav_list_item_link"
+                href="#"
+              >
+                Solutions
+              </a>
+            </li>
+            <li
+              class="menu_mobile_nav_list_item"
+            >
+              <a
+                class="menu_mobile_nav_list_item_link"
+                href="#"
+              >
+                Pricing
+              </a>
+            </li>
+            <li
+              class="menu_mobile_nav_list_item"
+            >
+              <p
+                class="menu_mobile_nav_list_item_link"
+                data-testid="mobile-resources-trigger"
+                role="button"
+              >
+                <img
+                  alt="seta para esquerda"
+                  height="13.34"
+                  src="/img.jpg"
+                  width="7.67"
+                />
+                Resources
+              </p>
+              <div
+                class="menu_mobile_dropdown"
+                data-testid="mobile-resources-dropdown"
+              >
+                <span
+                  aria-label="Close resources dropdown"
+                  class="menu_mobile_dropdown_close_btn"
+                  data-testid="mobile-resources-dropdown-close-button"
+                  role="button"
+                >
+                  ×
+                </span>
+                <div
+                  class="menu_mobile_dropdow_content"
+                >
+                  <ul
+                    class="menu_mobile_dropdown_list"
+                  >
+                    <li
+                      class="menu_mobile_dropdown_list_item"
+                    >
+                      <a
+                        class="menu_mobile_dropdown_list_item_link"
+                        href="#"
+                      >
+                        Help Center
+                      </a>
+                    </li>
+                    <li
+                      class="menu_mobile_dropdown_list_item"
+                    >
+                      <a
+                        class="menu_mobile_dropdown_list_item_link"
+                        href="#"
+                      >
+                        Blog
+                      </a>
+                    </li>
+                    <li
+                      class="menu_mobile_dropdown_list_item"
+                    >
+                      <a
+                        class="menu_mobile_dropdown_list_item_link"
+                        href="#"
+                      >
+                        Tutorials
+                      </a>
+                    </li>
+                    <li
+                      class="menu_mobile_dropdown_list_item"
+                    >
+                      <a
+                        class="menu_mobile_dropdown_list_item_link"
+                        href="#"
+                      >
+                        FAQs
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu_mobile_nav_list_item menu_mobile_nav_list_item_login"
+            >
+              <a
+                class="menu_mobile_nav_list_item_link"
+                href="#"
+              >
+                Log In
+              </a>
+              <button
+                class="menu_desktop_acess_button"
+              >
+                Sing Up Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Menu Component Mobile View matches snapshot on mobile (menu closed) 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="content content_mobile"
+  >
+    <img
+      alt="Logo"
+      class="menu_logo"
+      height="35"
+      src="/img.jpg"
+      width="103"
+    />
+    <div
+      aria-label="Open mobile menu"
+      class="menu_mobile_btn"
+      data-testid="mobile-menu-trigger"
+      role="button"
+    >
+      <span />
+      <span />
+      <span />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Menu Component Mobile View matches snapshot on mobile (menu open) 1`] = `
+<div
+  class="container"
+>
+  <div
+    class="content content_mobile"
+  >
+    <img
+      alt="Logo"
+      class="menu_logo"
+      height="35"
+      src="/img.jpg"
+      width="103"
+    />
+    <div
+      class="modal"
+      data-testid="mobile-menu-modal-backdrop"
+    />
+    <div
+      aria-label="Open mobile menu"
+      class="menu_mobile_btn"
+      data-testid="mobile-menu-trigger"
+      role="button"
+    >
+      <span />
+      <span />
+      <span />
+    </div>
+    <div
+      class="menu_mobile_box"
+      data-testid="mobile-menu-box"
+    >
+      <span
+        aria-label="Close mobile menu"
+        class="menu_mobile_close_btn"
+        data-testid="mobile-menu-close-button"
+        role="button"
+      >
+        ×
+      </span>
+      <div
+        class="menu_mobile_box_content"
+      >
+        <div
+          class="menu_mobile_nav"
+        >
+          <ul
+            class="menu_mobile_nav_list"
+          >
+            <li
+              class="menu_mobile_nav_list_item"
+            >
+              <a
+                class="menu_mobile_nav_list_item_link"
+                href="#"
+              >
+                Products
+              </a>
+            </li>
+            <li
+              class="menu_mobile_nav_list_item"
+            >
+              <a
+                class="menu_mobile_nav_list_item_link"
+                href="#"
+              >
+                Solutions
+              </a>
+            </li>
+            <li
+              class="menu_mobile_nav_list_item"
+            >
+              <a
+                class="menu_mobile_nav_list_item_link"
+                href="#"
+              >
+                Pricing
+              </a>
+            </li>
+            <li
+              class="menu_mobile_nav_list_item"
+            >
+              <p
+                class="menu_mobile_nav_list_item_link"
+                data-testid="mobile-resources-trigger"
+                role="button"
+              >
+                <img
+                  alt="seta para esquerda"
+                  height="13.34"
+                  src="/img.jpg"
+                  width="7.67"
+                />
+                Resources
+              </p>
+            </li>
+            <li
+              class="menu_mobile_nav_list_item menu_mobile_nav_list_item_login"
+            >
+              <a
+                class="menu_mobile_nav_list_item_link"
+                href="#"
+              >
+                Log In
+              </a>
+              <button
+                class="menu_desktop_acess_button"
+              >
+                Sing Up Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

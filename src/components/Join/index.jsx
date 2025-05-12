@@ -1,3 +1,4 @@
+// @/components/Join/index.jsx
 'use client';
 
 import { useEffect, useRef, useState, useContext } from 'react';
@@ -5,7 +6,6 @@ import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import styles from './styles.module.css';
 import { WindowWidthContext } from '@/context/WindowWidthContext';
-
 
 import upl01 from "./assets/upl01.png";
 import upl02 from "./assets/upl02.png";
@@ -34,7 +34,6 @@ import id03 from "./assets/id03.svg";
 import id04 from "./assets/id04.svg";
 import id05 from "./assets/id05.svg";
 
-
 const userPhotosData = [
   { id: 'upl01', src: upl01, alt: 'User', width: 60, height: 60, desktopPos: { top: '-15%', left: '26%' }, mobilePos: { top: '-60%', left: '85%' }, speedY: -35, speedXMobile: -30, panel: 'left' },
   { id: 'upl02', src: upl02, alt: 'User', width: 48, height: 48, desktopPos: { top: '5%', left: '2%' }, mobilePos: { top: '-58%', left: '5%' }, speedY: 40, speedXMobile: 35, panel: 'left' },
@@ -44,7 +43,6 @@ const userPhotosData = [
   { id: 'upl06', src: upl06, alt: 'User', width: 120, height: 120, desktopPos: { top: '60%', left: '12%' }, mobilePos: { top: '-30%', left: '20%' }, speedY: 45, speedXMobile: 40, panel: 'left' },
   { id: 'upl07', src: upl07, alt: 'User', width: 32, height: 32, desktopPos: { top: '130%', left: '28%' }, mobilePos: { top: '-3%', left: '87%' }, speedY: -38, speedXMobile: -20, panel: 'left' },
   { id: 'upl08', src: upl08, alt: 'User', width: 48, height: 48, desktopPos: { top: '130%', left: '0%' }, mobilePos: { top: '-35%', left: '15%' }, speedY: 30, speedXMobile: 22, panel: 'left' },
-
   { id: 'upd01', src: upd01, alt: 'User', width: 56, height: 56, desktopPos: { top: '-20%', right: '25%' }, mobilePos: { bottom: '-15%', left: '-3%' }, speedY: 35, speedXMobile: 30, panel: 'right' },
   { id: 'upd02', src: upd02, alt: 'User', width: 96, height: 96, desktopPos: { top: '-30%', right: '2%' }, mobilePos: { bottom: '-17%', left: '70%' }, speedY: -40, speedXMobile: -35, panel: 'right' },
   { id: 'upd03', src: upd03, alt: 'User', width: 64, height: 64, desktopPos: { top: '29%', right: '14%' }, mobilePos: { bottom: '-35%', left: '35%' }, speedY: 30, speedXMobile: 25, panel: 'right' },
@@ -60,14 +58,12 @@ const iconData = [
   { id: 'il04', src: il04, alt: 'Icon', width: 32, height: 32, desktopPos: { top: '55%', left: '8%' }, mobilePos: { top: '-38%', left: '0%' }, panel: 'left' },
   { id: 'il05', src: il05, alt: 'Icon', width: 48, height: 48, desktopPos: { top: '90%', left: '2%' }, mobilePos: { top: '-5%', left: '65%' }, panel: 'left' },
   { id: 'il06', src: il06, alt: 'Icon', width: 60, height: 60, desktopPos: { top: '105%', left: '25%' }, mobilePos: { top: '-30%', left: '83%' }, panel: 'left' },
-
   { id: 'id01', src: id01, alt: 'Icon', width: 104, height: 104, desktopPos: { top: '-8%', right: '15%' }, mobilePos: { bottom: '-22%', right: '40%' }, panel: 'right' },
   { id: 'id02', src: id02, alt: 'Icon', width: 64, height: 64, desktopPos: { top: '25%', right: '22%' }, mobilePos: { bottom: '-25%', right: '63%' }, panel: 'right' },
   { id: 'id03', src: id03, alt: 'Icon', width: 48, height: 48, desktopPos: { top: '20%', right: '5%' }, mobilePos: { bottom: '-29%', right: '30%' }, panel: 'right' },
   { id: 'id04', src: id04, alt: 'Icon', width: 48, height: 48, desktopPos: { top: '65%', right: '13%' }, mobilePos: { bottom: '-57%', right: '38%' }, panel: 'right' },
   { id: 'id05', src: id05, alt: 'Icon', width: 32, height: 32, desktopPos: { top: '99%', right: '17%' }, mobilePos: { bottom: '-48%', right: '70%' }, panel: 'right' },
 ];
-
 
 const Join = () => {
   const sectionRef = useRef(null);
@@ -94,7 +90,7 @@ const Join = () => {
   }, [inView, gsapModules]);
 
   useEffect(() => {
-    if (gsapModules && sectionRef.current && windowWidth > 0) {
+    if (gsapModules && sectionRef.current && windowWidth > 0) { 
       const { gsap, ScrollTrigger } = gsapModules;
       
       const triggersToKill = ScrollTrigger.getAll().filter(
@@ -103,7 +99,6 @@ const Join = () => {
       triggersToKill.forEach(st => st.kill());
       gsap.killTweensOf(sectionRef.current.querySelectorAll(`.${styles.image_wrapper}`));
       gsap.set(sectionRef.current.querySelectorAll(`.${styles.image_wrapper}`), { clearProps: "all" });
-
 
       const animations = [];
 
@@ -125,7 +120,7 @@ const Join = () => {
             };
             scale = imgData.width > 90 ? 1 : (imgData.width > 60 ? 1 : 0.95);
             targetAnimationProps = { xPercent: imgData.speedXMobile };
-          } else { // Desktop
+          } else { 
             initialPosProps = {
               top: imgData.desktopPos.top,
               left: imgData.desktopPos.left !== undefined ? imgData.desktopPos.left : 'auto',
@@ -144,7 +139,7 @@ const Join = () => {
               trigger: sectionRef.current,
               start: "top bottom",
               end: "bottom top",
-              scrub: 1.5 + Math.random() * 0.5,
+              scrub: 1.5 + Math.random() * 0.5, 
             }
           });
           animations.push(anim.scrollTrigger);
@@ -166,7 +161,7 @@ const Join = () => {
               ...(icon.panel === 'right' && { top: 'auto' }),
             };
             scale = 0.8;
-          } else { // Desktop
+          } else { 
             initialPosProps = {
               top: icon.desktopPos.top,
               left: icon.desktopPos.left !== undefined ? icon.desktopPos.left : 'auto',
@@ -188,6 +183,7 @@ const Join = () => {
     <div
       key={item.id}
       data-id={item.id}
+      data-testid={`visual-item-${item.id}`}
       className={`${styles.image_wrapper} ${itemType === 'user' ? styles.user_photo_wrapper : styles.element_float_wrapper}`}
       style={{
         width: `${item.width}px`,
@@ -214,7 +210,6 @@ const Join = () => {
           <button className={styles.btn}>Sign Up Now</button>
         </div>
 
-        {/* Container ÚNICO para todos os elementos visuais */}
         <div className={styles.visuals_container}>
           {userPhotosData.map(item => renderImageItem(item, 'user'))}
           {iconData.map(item => renderImageItem(item, 'icon'))}
