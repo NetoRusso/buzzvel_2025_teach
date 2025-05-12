@@ -1,5 +1,4 @@
-
-![Image](https://github.com/user-attachments/assets/e75faf90-3222-48a5-a2a2-c297f489fa8d)
+![Capa](https://github.com/user-attachments/assets/e75faf90-3222-48a5-a2a2-c297f489fa8d)
 # Projeto de Avaliação Frontend Developer - Buzzvel (teach)
 
 ## Veja online: https://teach-drab.vercel.app/
@@ -7,14 +6,22 @@
 
 Este projeto foi desenvolvido como parte do teste de avaliação para a vaga de Frontend Developer na Buzzvel, com o objetivo de replicar um design fornecido no Figma, implementando uma landing page responsiva, animada e otimizada para performance e SEO.
 
-![image]({https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white})
+![Image](https://github.com/user-attachments/assets/a5b3200b-db51-4000-b1ad-2d7b759e7892)
+
 
 ## Design de Referência
 
 O design da interface do usuário foi baseado nos protótipos web e mobile fornecidos no Figma.
 
 ## Tecnologias Utilizadas
-![Image]([https://github.com/user-attachments/assets/becff8e2-6e50-447e-9df6-d2c8009f4057](https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/next_js.png))
+![Next](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![GSAP](https://img.shields.io/badge/GSAP-93CF2B?style=for-the-badge&logo=greensock&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
+
 
 *   **Framework:** Next.js (v14.2.28)
     *   Escolhido por seus recursos de renderização (SSR/SSG), otimização de imagens, otimização de fontes, code splitting e roteamento, que contribuem significativamente para a performance e SEO.
@@ -50,6 +57,9 @@ O projeto consiste em uma landing page single-page composta por várias seções
     *   Links para "Log In" e botão "Sign Up Now".
     *   Logo clicável que rola a página para o topo.
 
+![Image](https://github.com/user-attachments/assets/dd173ee2-87e4-4739-aad6-d54714d14ef3)
+![Image](https://github.com/user-attachments/assets/fc1af95e-cdd6-46f8-a17d-6bd33a0c016d)
+
 2.  **Hero (`@/components/Hero`):**
     *   Seção principal de boas-vindas.
     *   Título principal (`<h1>`), parágrafo descritivo.
@@ -57,26 +67,34 @@ O projeto consiste em uma landing page single-page composta por várias seções
     *   Imagem principal otimizada com `next/image` e `priority={true}`.
     *   Seção "Trusted by" com logos de empresas, adaptando a quebra de linha do texto para mobile.
 
+![Image](https://github.com/user-attachments/assets/66825ef3-21c2-402e-b7e2-dce2bedd20d4)
+
 3.  **Features (`@/components/Features`):**
     *   Seção destacando funcionalidades do app "all-in-one".
     *   Layout de duas colunas (ou empilhado).
     *   Lista de tópicos, imagem de um desktop.
     *   Carrossel horizontal de cards de features com funcionalidade de "arrastar para rolar" (mouse).
     *   Elemento `Blob` animado no fundo, carregado dinamicamente.
+![Image](https://github.com/user-attachments/assets/3f4805f8-d5fd-4f2d-9d41-36592a032c21)
 
 4.  **QuotoCard (`@/components/QuotoCard`):**
     *   Renderiza um card de citação/depoimento com design elaborado.
     *   Inclui texto, autor, imagem e elementos decorativos.
     *   Possui elementos visuais (setas, dots) que sugerem uma funcionalidade de slider, porém, a lógica de navegação do slider não foi implementada neste componente isolado. A seção "SocialProof" implementa o carrossel de depoimentos.
+![Image](https://github.com/user-attachments/assets/838b582e-bbdd-4182-a978-386bad39ec5c)
 
 5.  **Meeting (`@/components/Meeting`):**
     *   Seção com um grid de 10 fotos e um bloco de texto.
     *   Implementa um efeito visual onde, a cada intervalo de tempo, uma foto aleatória no grid recebe "foco" (escala, opacidade e z-index aumentados) através de animação CSS controlada por JavaScript.
 
+![Image](https://github.com/user-attachments/assets/8850faaa-b3a3-4934-9bc9-e30bd0f2b6c5)
+
 6.  **Count (`@/components/Count`):**
     *   Seção com estatísticas numéricas (países, professores, estudantes).
     *   Os números são animados utilizando o componente `AnimateCounter` quando a seção entra na viewport.
     *   Utiliza a função `formatNumber` para exibir números grandes com sufixo "M".
+
+![Image](https://github.com/user-attachments/assets/31122181-5e7c-431e-89b4-1cb9b61d1fd2)
 
 7.  **SocialProof (`@/components/SocialProof`):**
     *   Carrossel de depoimentos ("What everyone says").
@@ -85,16 +103,24 @@ O projeto consiste em uma landing page single-page composta por várias seções
     *   Funcionalidade de "arrastar para rolar" (mouse) em todas as visualizações.
     *   Layout responsivo, escondendo botões de navegação em mobile.
 
+![Image](https://github.com/user-attachments/assets/0381f0ab-7d96-43a1-a3fd-6e95401f4a48)
+
 8.  **CallFeatures (`@/components/CallFeatures`):**
     *   Seção de call-to-action para mais funcionalidades.
     *   Layout com texto, link e um grid de cards e imagens.
     *   Elemento `Blob` animado no fundo, carregado dinamicamente quando a seção entra na view.
+
+![Image](https://github.com/user-attachments/assets/f26b61a5-53b9-4330-9e4d-3e2a098628d2)
+
 
 9.  **Join (`@/components/Join`):**
     *   Seção visualmente rica com um call-to-action central ("Join a world of learning").
     *   Múltiplas imagens (fotos de usuários e ícones) flutuam ao redor com efeito de paralaxe ao rolar a página, implementado com GSAP e ScrollTrigger.
     *   As animações e posições das imagens se adaptam entre desktop e mobile.
     *   GSAP é carregado dinamicamente quando a seção se torna visível.
+
+![Image](https://github.com/user-attachments/assets/9c284174-eafa-4b85-8b8d-7ee03fe5932a)
+
 
 10. **Request (`@/components/Request`):**
     *   Formulário para "Request Demo".
@@ -248,6 +274,8 @@ O projeto utiliza Jest e React Testing Library para testes unitários e de integ
 *   Comportamento responsivo baseado no `WindowWidthContext`.
 *   Snapshots para detectar regressões na UI.
 
+  ![Image](https://github.com/user-attachments/assets/da67571c-0742-44ca-a534-8acae0d95b72)
+
 Mocks são utilizados para isolar componentes de suas dependências (ex: `next/image`, `next/link`, bibliotecas de animação) e para controlar APIs do browser (ex: `Date`, `performance.now`).
 
 ## Considerações e Possíveis Melhorias Futuras
@@ -259,7 +287,7 @@ Mocks são utilizados para isolar componentes de suas dependências (ex: `next/i
 
 ## Autor
 
-*   **Neto Russo**
+*   **Neto Russo** https://netorusso.onrender.com/
 
 ---
 
